@@ -21,7 +21,7 @@ layout:
 
 # Welcome
 
-This guide provides troubleshooting steps, performance tips, and setup instructions for ASUS TUF devices. Find solutions to common issues and learn how to get the best experience from your new TUF Laptop.
+This guide provides troubleshooting steps, performance tips, and setup instructions for ASUS TUF devices **on Windows**. Find solutions to common issues and learn how to get the best experience from your new TUF Laptop.
 
 For additional help or discussion, feel free to join our Discord or Reddit below
 
