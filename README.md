@@ -28,8 +28,8 @@
 |------------------------|---------|-------|
 | English (en-US)        |   ✅    |  ✅   |
 | Romanian (ro-RO)       |   ⌛    |  ❌   |
+| German (de-DE)         |   ⌛    |  ❌   |
 
-## Active Contributors
 |                   Contributor                    |    Language (Locale)   |
 |--------------------------------------------------|------------------------|
 | [@mrc2rules](https://www.github.com/mrc2rules)   |    English (en-US)     |
