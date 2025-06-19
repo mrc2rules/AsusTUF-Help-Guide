@@ -9,7 +9,7 @@
     <a href="https://reddit.com/r/asustuf">
       <img src="https://img.shields.io/badge/Visit r/asustuf-FF4500?style=for-the-badge&logo=reddit&logoColor=white" >
     <a href="https://discord.gg/g6exUXvWge">
-      <img src="https://img.shields.io/discord/1193530843151470592?style=for-the-badge&logo=discord&logoColor=7289da&label=Join%20Discord&color=7289da" >
+      <img src="https://img.shields.io/discord/1205275965945675816?style=for-the-badge&logo=discord&logoColor=7289da&label=Join%20Discord&color=7289da" >
     </a>
   </p>
 </div>
