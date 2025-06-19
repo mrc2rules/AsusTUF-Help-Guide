@@ -21,7 +21,7 @@ layout:
 
 # Bine ai venit!
 
-Acest ghid oferă pași de troubleshooting, sfaturi pentru îmbunătățirea performanței și instrucțiuni pentru laptop-urile ASUS din seria TUF.\
+Acest ghid oferă pași de troubleshooting, sfaturi pentru îmbunătățirea performanței și instrucțiuni pentru laptop-urile ASUS din seria TUF pe Linux.\
 Aici poți găsi soluții la probleme întâmpinate frecvent și cum să obții cea mai bună experiență cu noul tău laptop TUF.
 
 Pentru ajutor sau discuții, nu ezitați să vă alăturați server-ului nostru de Discord sau pe Reddit, de mai jos.
