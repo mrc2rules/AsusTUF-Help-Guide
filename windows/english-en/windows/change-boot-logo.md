@@ -26,15 +26,19 @@ If you mess up the installation, your system may become unbootable! This softwar
 
 ## # First Time Installation
 
-### Step 1: Download "HackBGRT"
+{% stepper %}
+{% step %}
+## Download "HackBGRT"
 
 To change the boot logo, we will use an open-source application called HackBGRT. Here’s how to use it.
 
 1. Go to the [HackBGRT GitHub](https://github.com/Metabolix/HackBGRT/releases)
 2. Download the **latest release ZIP file**.
 3. Extract it to desktop/folder of your choice
+{% endstep %}
 
-### Step 2: Using HackBGRT
+{% step %}
+## Using HackBGRT
 
 1. Open the extracted folder, right-click on the **setup.exe** file, and select the **Run as administrator**\
    \
@@ -48,8 +52,10 @@ To change the boot logo, we will use an open-source application called HackBGRT.
    &#x20;\
    <img src="../.gitbook/assets/image (10).png" alt="" data-size="original">
 3. After you press a key, it will open the paint app
+{% endstep %}
 
-### Step 3: Setting the logo
+{% step %}
+## Setting the logo
 
 {% hint style="info" %}
 **Note:**
@@ -63,8 +69,10 @@ To change the boot logo, we will use an open-source application called HackBGRT.
 2. If you want, you can resize the image by clicking on the **Resize** button.
 3. Once you are done, click **File** > **Save** to save the file. After saving, close the Paint application.
 4. Press a key to exit the cmd window.
+{% endstep %}
 
-### Step 4: Rebooting / Secure Boot Instructions
+{% step %}
+## Rebooting / Secure Boot Instructions
 
 Since Secure Boot only accepts trusted files during boot, HackBGRT comes with the _shim_ boot loader, a tool which allows you to manually select HackBGRT as a trusted program.&#x20;
 
@@ -188,7 +196,11 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
 
 
 
-You are now ready to boot! Congrats!
+{% hint style="success" %}
+You are now ready to boot!
+{% endhint %}
+{% endstep %}
+{% endstepper %}
 
 ## # Modifying Installation
 

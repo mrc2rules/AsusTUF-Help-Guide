@@ -1,4 +1,5 @@
 ---
+description: 'Note: This is a clean-install'
 icon: arrows-rotate-reverse
 layout:
   title:
@@ -27,7 +28,11 @@ All files on the drive you plan to install Windows to will be **deleted** if you
 * A working computer to run the Windows Media Creation Tool.
 * A USB flash drive that is at least 8GB or greater.
 
-## Step 1: Creating installation media <a href="#creating-installation-media" id="creating-installation-media"></a>
+## # Steps
+
+{% stepper %}
+{% step %}
+## Creating installation media <a href="#creating-installation-media" id="creating-installation-media"></a>
 
 There are two ways you can use to create an installation media. If you're new to this, you should probably use MCT (Media Creation Tool).&#x20;
 
@@ -35,8 +40,6 @@ Rufus is another choice for advanced users with a lot more configurable options 
 
 {% tabs %}
 {% tab title="Microsoft Media Creation Tool" %}
-
-
 1. Create a bootable USB flash drive using the [Create Windows 11 Installation Media download](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft. It can be found under the headline “Create Windows 11 Installation Media”
 
 {% hint style="warning" %}
@@ -84,14 +87,18 @@ Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside 
 6. Eject the USB flash drive.
 {% endtab %}
 {% endtabs %}
+{% endstep %}
 
-## Step 2: Boot into your USB <a href="#creating-installation-media" id="creating-installation-media"></a>
+{% step %}
+## Boot into your USB <a href="#creating-installation-media" id="creating-installation-media"></a>
 
 Plug in the Windows USB installer and spam `Esc` when booting the laptop.&#x20;
 
 Change the BIOS boot order to have USB media as the first priority (this can usually be found under the boot tab) or simply look for the words “boot menu” when you see your BIOS boot screen. Press the corresponding function key and choose the USB flash drive to boot from it.
+{% endstep %}
 
-## Step 3: Installing Windows <a href="#creating-installation-media" id="creating-installation-media"></a>
+{% step %}
+## Installing Windows <a href="#creating-installation-media" id="creating-installation-media"></a>
 
 1. Click “Install now”
 
@@ -130,31 +137,34 @@ Do not delete any partitions, especially the smaller ones. They contain OEM imag
 
 You have successfully installed Windows 11. Once the computer has rebooted, you will be greeted with the Out-of-the-Box Experience and you can start setting up your new installation of Windows.
 {% endhint %}
+{% endstep %}
 
-## Step 4: Windows OOBE (Out Of the Box Experience)
+{% step %}
+## Windows OOBE (Out Of the Box Experience)
 
 The laptop will boot into the OOBE setup. Please proceed according to the steps.&#x20;
 
 You may or may not have WiFi at this stage. If so, please use an ethernet cable
+{% endstep %}
 
-## Step 5: Base Windows Setup
+{% step %}
+## Base Windows Setup
 
-### 1. Windows Updates <a href="#windows-updates" id="windows-updates"></a>
+* **Windows Updates**\
+  Open Windows Updates and update everything. Reboot when needed. Repeat until updates are gone.\
+  \
+  If updates are "stuck," click `pause updates` then `resume updates` and repeat above steps.\
 
-Open Windows Updates and update everything. Reboot when needed. Repeat until updates are gone.
+* **Graphics Driver Updates**\
+  Open the '[NVIDIA](https://www.nvidia.com/en-us/software/nvidia-app/)' and '[AMD Adrenalin](https://www.amd.com/en/products/software/adrenalin.html)' app to update your graphics drivers. This is crucial for optimal performance. Avoid updating **graphics drivers** from Windows Update/GHelper as they can be pretty old.\
+  \
+  Additionally, install GHelper and make sure Armoury Crate is not installed. Don't know what GHelper is or how to install?\
+  [Click here for the tutorial](../getting-started/installing-ghelper.md) - [installing-ghelper.md](../getting-started/installing-ghelper.md "mention")
 
-If updates are "stuck," click `pause updates` then `resume updates` and repeat above steps.
 
-### 2. Graphics Driver Updates
 
-Open the '[NVIDIA](https://www.nvidia.com/en-us/software/nvidia-app/)' and '[AMD Adrenalin](https://www.amd.com/en/products/software/adrenalin.html)' app to update your graphics drivers. This is crucial for optimal performance. Avoid updating **graphics drivers** from Windows Update/GHelper as they can be pretty old.
-
-Additionally, install GHelper and make sure Armoury Crate is not installed. Don't know what GHelper is or how to install?
-
-[Click here for the tutorial](../getting-started/installing-ghelper.md) - [installing-ghelper.md](../getting-started/installing-ghelper.md "mention")
-
-### 3. Windows Store Updates <a href="#windows-store-updates" id="windows-store-updates"></a>
-
-Open Microsoft Store -> click library on bottom left -> update everything.
-
-Uninstall any apps you don't want. _**Don't uninstall Realtek Audio Console or Dolby Access**_
+* **Windows Store Updates**\
+  Open Microsoft Store -> click library on bottom left -> update everything.\
+  Uninstall any apps you don't want. _**Don't uninstall Realtek Audio Console or Dolby Access**_
+{% endstep %}
+{% endstepper %}
