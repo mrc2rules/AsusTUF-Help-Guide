@@ -28,6 +28,7 @@
 |---------|-------|
 | English (en) | English (en) | 
 | Romanian (ro) - Incomplete |
+| German (de) - Incomplete |
 
 ## License
 
