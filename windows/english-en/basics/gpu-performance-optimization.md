@@ -82,69 +82,86 @@ This way you can achieve better thermals and power consumption while maintaining
 * For demonstration purposes, we are going to be using an example 4060M GPU. Your GPU settings and UV **WILL VARY.**
 * You can click the images to get a zoomed view
 
-### Steps
+## Steps
 
-1. Run a game or the superposition benchmark software.\
-   \
-   Then, open GPU-Z and head to the `Sensors` tab. \
-   Note your `GPU Clock` and`GPU Voltage` values (should be ≥ \~0.975v).\
-   \
-   Keep note of the `GPU Temperature`\
-   &#x20;<img src="../.gitbook/assets/image.png" alt="" data-size="original">\
+{% stepper %}
+{% step %}
+Run a game or the superposition benchmark software.\
+\
+Then, open GPU-Z and head to the `Sensors` tab. \
+Note your `GPU Clock` and`GPU Voltage` values (should be ≥ \~0.975v).\
+\
+Keep note of the `GPU Temperature`\
+&#x20;<img src="../.gitbook/assets/image.png" alt="" data-size="original">
+{% endstep %}
 
-2.  Open MSI Afterburner. Inside, do `CTRL + F` to open the curve editor. \
-    The bottom horizontal line is your **voltage.**\
-    The vertical line to your left is your **clock speed.**\
-    \
-    It should look like this:
+{% step %}
+Open MSI Afterburner. Inside, do `CTRL + F` to open the curve editor. \
+The bottom horizontal line is your **voltage.**\
+The vertical line to your left is your **clock speed.**\
+\
+It should look like this:
 
-    <div align="left"><figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure></div>
+{% endstep %}
 
+{% step %}
+Remembering your max `GPU Voltage`, click the dot directly above it. \
+These are your stock values. (_In my case_, 1.01v & \~2500Mhz as highlighted in white)&#x20;
 
-3.  Remembering your max `GPU Voltage`, click the dot directly above it. \
-    These are your stock values. (_In my case_, 1.01v & \~2500Mhz as highlighted in white)&#x20;
+<div align="left"><figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
+{% endstep %}
 
-    <div align="left"><figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
+{% step %}
+Next, go down by 25mv and click that point. (_In my case,_ that would be 0.975v )
 
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-4.  Next, go down by 25mv and click that point. (_In my case,_ that would be 0.975v )
+{% step %}
+Then, **hold shift + drag the point** **upwards** till the highlighted `GPU Clock` value on the left reaches your stock clocks from before. (_In my case,_ I dragged it from 2400MHz to 2500Mhz)
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ezgif.com-animated-gif-maker (3).gif" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-
-5.  Then, **hold shift + drag the point** **upwards** till the highlighted `GPU Clock` value on the left reaches your stock clocks from before. (_In my case,_ I dragged it from 2400MHz to 2500Mhz)
-
-    <figure><img src="../.gitbook/assets/ezgif.com-animated-gif-maker (3).gif" alt=""><figcaption></figcaption></figure>
-6.  Next, again, **hold shift, select the entire region to the right of your value** _(0.975v in my case)_ **and drag it fully down.**\
-
-
-    <figure><img src="../.gitbook/assets/ezgif-65d5d33c42a313.gif" alt=""><figcaption></figcaption></figure>
-
-    It should look like this:\
-
-
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-
-7.  Run the **SuperposItion Benchmark** to test your settings. \
+{% step %}
+Next, again, **hold shift, select the entire region to the right of your value** _(0.975v in my case)_ **and drag it fully down.**\
 
 
-    {% hint style="info" %}
-    BSODs or crashes are normal. Don't worry. If you need additional help or can't figure it out, post on the subreddit or ask in our discord below.
+<figure><img src="../.gitbook/assets/ezgif-65d5d33c42a313.gif" alt=""><figcaption></figcaption></figure>
 
-    [https://discord.com/invite/g6exUXvWge](https://discord.com/invite/g6exUXvWge)
-    {% endhint %}
+It should look like this:\
 
-    \
-    If you do not experience crashes or artifacts, repeat Steps 4 till 8 again.\
-    If you hit an unstable voltage, keep increasing the voltage by 5mv until you have stable results again.\
-    \
-    (_Suppose,_ 0.975v is unstable for you. Increase it by 5mv - 0.980v - and test again. If it's still unstable, keep going until you have stable results).\
 
-8. Finally, after you've determined your stable settings,\
-   apply the settings [![](https://user-images.githubusercontent.com/69487009/155014073-4aac5d7b-91d6-4b96-abd1-ab51287cb248.png)](https://user-images.githubusercontent.com/69487009/155014073-4aac5d7b-91d6-4b96-abd1-ab51287cb248.png) and save [![](https://user-images.githubusercontent.com/69487009/155004968-6f7ee82e-1575-4605-9932-644e5d702d45.png)](https://user-images.githubusercontent.com/69487009/155004968-6f7ee82e-1575-4605-9932-644e5d702d45.png) them to a profile. [![](https://user-images.githubusercontent.com/69487009/155006086-5e300602-f099-4c6e-a3bf-29962b2905d2.png)](https://user-images.githubusercontent.com/69487009/155006086-5e300602-f099-4c6e-a3bf-29962b2905d2.png) \
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
 
-9. Click this [![](https://user-images.githubusercontent.com/69487009/155013987-f6c7f084-c4cb-4804-bc98-1786056959a7.png)](https://user-images.githubusercontent.com/69487009/155013987-f6c7f084-c4cb-4804-bc98-1786056959a7.png) to have the your settings applied at startup.
+{% step %}
+Run the **SuperposItion Benchmark** to test your settings.&#x20;
+
+{% hint style="info" %}
+BSODs or crashes are normal. Don't worry. If you need additional help or can't figure it out, post on the subreddit or ask in our discord below.
+
+[https://discord.com/invite/g6exUXvWge](https://discord.com/invite/g6exUXvWge)
+{% endhint %}
+
+\
+If you do not experience crashes or artifacts, repeat Steps 4 till 8 again.\
+If you hit an unstable voltage, keep increasing the voltage by 5mv until you have stable results again.\
+\
+(_Suppose,_ 0.975v is unstable for you. Increase it by 5mv - 0.980v - and test again. If it's still unstable, keep going until you have stable results).\
+
+{% endstep %}
+
+{% step %}
+Finally, after you've determined your stable settings,\
+apply the settings [![](https://user-images.githubusercontent.com/69487009/155014073-4aac5d7b-91d6-4b96-abd1-ab51287cb248.png)](https://user-images.githubusercontent.com/69487009/155014073-4aac5d7b-91d6-4b96-abd1-ab51287cb248.png) and save [![](https://user-images.githubusercontent.com/69487009/155004968-6f7ee82e-1575-4605-9932-644e5d702d45.png)](https://user-images.githubusercontent.com/69487009/155004968-6f7ee82e-1575-4605-9932-644e5d702d45.png) them to a profile. [![](https://user-images.githubusercontent.com/69487009/155006086-5e300602-f099-4c6e-a3bf-29962b2905d2.png)](https://user-images.githubusercontent.com/69487009/155006086-5e300602-f099-4c6e-a3bf-29962b2905d2.png)&#x20;
+{% endstep %}
+
+{% step %}
+Click this [![](https://user-images.githubusercontent.com/69487009/155013987-f6c7f084-c4cb-4804-bc98-1786056959a7.png)](https://user-images.githubusercontent.com/69487009/155013987-f6c7f084-c4cb-4804-bc98-1786056959a7.png) to have the your settings applied at startup.
+{% endstep %}
+{% endstepper %}
 
 {% hint style="success" %}
 Congratulations! You should now have a lower temperature while maintaining the same performance! Compare your `GPU Temperature` from Step 1 vs now!
