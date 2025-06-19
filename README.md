@@ -30,6 +30,8 @@
 | Romanian (ro-RO)       |   ⌛    |  ❌   |
 | German (de-DE)         |   ⌛    |  ❌   |
 
+# Active contributors
+
 |                   Contributor                    |    Language (Locale)   |
 |--------------------------------------------------|------------------------|
 | [@mrc2rules](https://www.github.com/mrc2rules)   |    English (en-US)     |
