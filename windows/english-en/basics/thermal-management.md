@@ -25,15 +25,29 @@ This section covers key cooling solutions, recommended settings, and best practi
 
 <details>
 
-<summary>Click Here For Frequently Asked Questions</summary>
+<summary><mark style="color:blue;">New? Click here for frequently asked questions</mark></summary>
 
-1. _<mark style="color:orange;">**My CPU is at 95C! My GPU is at 82C! It's overheating!**</mark>_\
-   _-_ These temps are perfectly fine; the chips are designed to run at these temps \
-   \[CPU < 98/99C || GPU < 84/85C]\
-   \
-   There are safety mechanisms in place, and it will automatically throttle if it reaches dangerous temps. Refer to [#the-essentials](thermal-management.md#the-essentials "mention") & [#additional-steps](thermal-management.md#additional-steps "mention") below to lower temps further.
-2. _<mark style="color:orange;">**Are there any good custom fan curves? Should I use my own?**</mark>_ \
-   \- No, you shouldn't need to change the fan curves; the defaults are perfectly fine.
+_<mark style="color:orange;">**Are there any good custom fan curves? Should I use my own?**</mark>_ \
+\- No, you don't need to change the fan curves; the defaults are perfectly fine.
+
+_<mark style="color:orange;">**Are there any good GHelper/Armory Crate presets?**</mark>_ \
+\- No, you don't need add any "presets"; the defaults are perfectly fine.
+
+</details>
+
+<details>
+
+<summary><mark style="color:red;">Overheating? Click here</mark></summary>
+
+_-_ As long as the it doesn't hit Max Temps (below), it's perfectly fine; the chips are designed to run at these temps. Check the table below.
+
+| Component | Idle Temp   | Usual Load Temp | Max Temp Range ⚠️ |
+| --------- | ----------- | --------------- | ----------------- |
+| **CPU**   | 40°C - 60°C | 80°C - 90°C     | 95-100°C          |
+| **GPU**   | 30°C - 50°C | 70°C - 80°C     | 85-90°C           |
+
+\
+There are safety mechanisms in place, and it will automatically throttle if it reaches dangerous temps. Refer to [#the-essentials](thermal-management.md#the-essentials "mention") & [#additional-steps](thermal-management.md#additional-steps "mention") below to lower temps further.
 
 </details>
 
