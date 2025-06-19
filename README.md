@@ -30,7 +30,7 @@
 | Romanian (ro-RO)       |   ⌛    |  ❌   |
 | German (de-DE)         |   ⌛    |  ❌   |
 
-# Active contributors
+## Active contributors
 
 |                   Contributor                    |    Language (Locale)   |
 |--------------------------------------------------|------------------------|
