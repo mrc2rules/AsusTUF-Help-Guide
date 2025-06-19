@@ -14,23 +14,29 @@
   </p>
 </div>
 
+## Available languages
 
+**Legend**
 
-## Active Contributors
-|   |   |
-|---|---|
-| [@mrc2rules](https://www.github.com/mrc2rules)   | English (en)  |
-| [@0x5b62656e5d](https://github.com/0x5b62656e5d) | English (en)  |
-| [@ScottN13](https://github.com/ScottN13)         | Romanian (ro) |
+✅: Completed
 
-## Languages
-| Windows | Linux |
-|---------|-------|
-| English (en) | English (en) | 
-| Romanian (ro) - Incomplete |
-| German (de) - Incomplete |
+⌛: WIP
+
+❌: Not started
+
+|    Language (Locale)   | Windows | Linux |
+|------------------------|---------|-------|
+| English (en-US)        |   ✅    |  ✅   |
+| Romanian (ro-RO)       |   ⌛    |  ❌   |
+| German (de-DE)         |   ⌛    |  ❌   |
+
+|                   Contributor                    |    Language (Locale)   |
+|--------------------------------------------------|------------------------|
+| [@mrc2rules](https://www.github.com/mrc2rules)   |    English (en-US)     |
+| [@0x5b62656e5d](https://github.com/0x5b62656e5d) |    English (en-US)     |
+| [@ScottN13](https://github.com/ScottN13)         |    Romanian (ro-RO)    |
 
 ## License
 
-[Licensed under CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).  A copy of the license can be found in the [**LICENSE**](https://github.com/mrc2rules/AsusTUF-Help-Guide/blob/main/LICENSE) file.
+[Licensed under CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). A copy of the license can be found in [**LICENSE**](https://github.com/mrc2rules/AsusTUF-Help-Guide/blob/main/LICENSE).
 
