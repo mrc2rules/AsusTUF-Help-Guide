@@ -36,7 +36,8 @@
 |--------------------------------------------------|------------------------|
 | [@mrc2rules](https://www.github.com/mrc2rules)   |    English (en-US)     |
 | [@0x5b62656e5d](https://github.com/0x5b62656e5d) |    English (en-US)     |
-| [@ScottN13](https://github.com/ScottN13)         |    Romanian (ro-RO)    |
+| [@Anachoretic](https://github.com/Anachoretic)   |    English (en-US)     |
+| [@ScottN13](https://github.com/ScottN13)         |    Romanian (ro-RO) <br>German (de-DE)    |
 
 ## License
 
