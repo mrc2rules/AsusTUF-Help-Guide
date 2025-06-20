@@ -1,3 +1,19 @@
+---
+description: ''
+icon: arrows-rotate-reverse
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: true
+---
+
 Installation Guide (Before Installing)
 
 Pre-installation Requirements
