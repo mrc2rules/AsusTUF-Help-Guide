@@ -14,34 +14,7 @@ layout:
     visible: true
 ---
 
-# Installing Linux
-
-## Asus Laptops and Linux Compatibility
-
-Asus laptops have excellent compatibility with Linux compared to many other laptops brands. Most of the software you need to control features (like RGB, CPU modes, and fan curves) are readily available on Linux. You can pretty much manage everything just like you would on Windows.
-
-Additionally, you can check the list of supported games on [Are We Anti-Cheat Yet](https://areweanticheatyet.com/) to see if your games work well on Linux.
-
-## Choosing The Right Distro
-
-Picking a Linux distro can be annoying, but I’ve found that Fedora is the best all around choice.
-
-The software support for Debian based distros is pretty limited - you’ll end up having to compile a lot of things from source. So, I’d recommend avoiding distros like Ubuntu or Mint. Not that they’re bad, just not ideal when it comes to software compatibility out of the box.
-
-You can go with Fedora Workstation if you like a macOS like look, or Fedora KDE if you prefer something closer to Windows 10. Both work great.
-
-## Step 1: Installing Linux
-
-{% hint style="warning" %}
-**Note:**
-
-Set your GPU mode to “Ultimate” or “Standard” beforehand in Windows via GHelper/Armory Crate
-{% endhint %}
-
-* If you want to install **Linux only**,  just erase your disk during setup and tell the installer to install Fedora only.
-* If you want to **dual boot Fedora with Windows**, just follow this following linked YouTube guide step by step. -> [How to Dual Boot Fedora](https://youtu.be/kvnfccdTYQU)
-
-## Step 2: Post Install Configuration
+ Post Install Configuration
 
 If you have an Nvidia dGPU, you’ll need to install the Nvidia drivers on Linux.&#x20;
 
@@ -109,7 +82,19 @@ Since most of us here on the subreddit are more familiar with Windows, support f
 2. [r/fedora](https://www.reddit.com/r/fedora/)
 3. Fedora Forums
 4. [Asus Linux Discord server](https://discord.gg/B8GftRW2Hd)
-5. [Gaming on Linux](https://youtu.be/BYIDoD8VdAw)
+ 
+ 
+ 
+ 
+ ##Gaming on Linux(https://youtu.be/BYIDoD8VdAw)
+If you have most games on Steam, then congrats, you’ve saved yourself from some hassle. Just go to Steam settings and enable Proton. After that, your games should run normally, just like they did on Windows.
+If you use any launcher other than Steam, you’ll need to install Lutris to play games from different launchers such as Epic Games, GOG, or any other emulators.
 
-And just so you know, I use Arch, btw!
+To install Lutris, type this in the terminal to install Lutris and Wine:
+
+`sudo dnf install lutris && sudo dnf install wine`
+
+[Video tutorial on how to add game executables manually: Installation Guide](https://www.youtube.com/watch?v=hDg4rJj8jhk)
+
+***And just so you know, I use Arch, btw!***
 
