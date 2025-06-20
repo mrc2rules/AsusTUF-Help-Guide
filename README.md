@@ -6,6 +6,7 @@
     <br/> 
     <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=black" alt="Windows" >
     <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" >
+    <img src="https://img.shields.io/badge/GitBook-%23000000.svg?style=for-the-badge&logo=gitbook&logoColor=white" >
     <a href="https://reddit.com/r/asustuf">
       <img src="https://img.shields.io/badge/Visit r/asustuf-FF4500?style=for-the-badge&logo=reddit&logoColor=white" >
     <a href="https://discord.gg/g6exUXvWge">
