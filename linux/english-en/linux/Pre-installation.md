@@ -14,7 +14,10 @@ Additionally, you can check the list of supported games on "Are We Anti-Cheat Ye
 
 Creating a Bootable Media:
 
-First, download the latest ISO from the [Fedora website](https://fedoraproject.org/ja/workstation/download).
+First, download the latest ISO from the [Fedora website](https://fedoraproject.org/en/workstation/download).
+
+***You need to download the iso under "For Intel and AMD x86_64 systems"***
+
 The recommended one is Fedora Workstation (GNOME). You can also use Fedora Workstation (KDE).
 
 Q: What do "GNOME" and "KDE" at the end mean?
