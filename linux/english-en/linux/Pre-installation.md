@@ -30,7 +30,7 @@ Additionally, you can check the list of supported games on "Are We Anti-Cheat Ye
 
 Creating a Bootable Media:
 
-First, download the latest ISO from the [Fedora website](https://fedoraproject.org/ja/workstation/download).
+First, download the latest ISO from the [Fedora website](https://fedoraproject.org/en/workstation/download).
 The recommended one is Fedora Workstation (GNOME). You can also use Fedora Workstation (KDE).
 
 Q: What do "GNOME" and "KDE" at the end mean?
@@ -41,7 +41,7 @@ After you've downloaded the ISO, just run Rufus and burn the ISO to the USB driv
 # Dual Booting
 If you plan on dual booting (i.e., using both Linux and Windows at the same time), you need to create space for Fedora to be installed on.Dont create a new voume just leave it blank so the installer pickups up the mepty space.
 
-[Follow this guide]: (https://www.youtube.com/watch?v=eHQJMy8Q7Zk)
+[Follow this guide](https://www.youtube.com/watch?v=eHQJMy8Q7Zk)
 
 ***Note: To go into the Bios, just hold the F2 key and press the power button. It should take you to the Bios. In the Bios, disable Secure Boot and drag the "Windows Boot Manager" below the USB drive, then save changes and exit.***
 
