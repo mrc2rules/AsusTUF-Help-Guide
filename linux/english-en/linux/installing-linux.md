@@ -35,27 +35,27 @@ You can go with Fedora Workstation if you like a macOS like look, or Fedora KDE 
 {% hint style="warning" %}
 **Note:**
 
-Set your GPU mode to “Ultimate” or “Standard” beforehand in Windows via GHelper/Armory Crate
+Set your GPU mode to “Ultimate” or “Standard” beforehand in Windows via GHelper/Armoury Crate
 {% endhint %}
 
-* If you want to install **Linux only**,  just erase your disk during setup and tell the installer to install Fedora only.
-* If you want to **dual boot Fedora with Windows**, just follow this following linked YouTube guide step by step. -> [How to Dual Boot Fedora](https://youtu.be/kvnfccdTYQU)
+* If you want to install **Linux only**,  erase your disk during setup and tell the installer to install Fedora only.
+* If you want to **dual boot Fedora with Windows**, follow the [linked YouTube guide](https://youtu.be/kvnfccdTYQU).
 
 ## Step 2: Post Install Configuration
 
-If you have an Nvidia dGPU, you’ll need to install the Nvidia drivers on Linux.&#x20;
+If you have an Nvidia dGPU, you’ll need to install the Nvidia drivers on Linux.
 
-If you have an AMD dGPU, you don’t need to install any extra drivers because the open source Mesa drivers are already included in the Linux kernel.&#x20;
+If you have an AMD dGPU, you don’t need to install any extra drivers because the open source Mesa drivers are already included in the Linux kernel.
 
 {% hint style="info" %}
 **Note:**
 
-**U**nlike Windows, you generally don’t need to install additional drivers for other hardware. Linux usually handles that automatically.
+Unlike Windows, you generally don’t need to install additional drivers for other hardware. Linux usually handles that automatically.
 {% endhint %}
 
 ## Step 3: Setting Up Asus Software
 
-The instructions you need are on the \[Asus Linux website]\(https://asus-linux.org/guides/fedora-guide/). You can skip the installation steps there and start from the Setup section. Just follow these parts:
+The instructions you need are on the [Asus Linux website](https://asus-linux.org/guides/fedora-guide/). You can skip the installation steps there and start from the Setup section. Just follow these parts:
 
 1. Update Fedora
 2. Install nvidia graphics drivers (skip if you have amd gpu)
@@ -67,7 +67,7 @@ After installing supergfxctl, open your terminal and run:
 
 `sudo systemctl start supergfxd.service`
 
-You can ignore the “Asus kernel isn’t loaded” warning in _**rog-control-center**_.
+You can ignore the “Asus kernel isn’t loaded” warning in ***rog-control-center***.
 
 If you’re using gnome, install the supergfxctl-gex extension.
 
