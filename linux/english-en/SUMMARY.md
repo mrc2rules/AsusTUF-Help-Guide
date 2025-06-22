@@ -4,7 +4,7 @@
 
 ## Linux
 
-* [Pre-installation](linux/pre-installation.md)
+* [Pre-installation](linux/Pre-installation.md)
 * [Installing Linux](linux/installing-linux.md)
 
 ## Getting Started
