@@ -1,4 +1,4 @@
-***#Asus Tuf Linux Fixes & FAQ***
+### Asus Tuf Linux Fixes & FAQ
 
 1. Brightness not working in Hybrid or Eco mode.(But,works in ultimate/dgpu only mode)
 Fix: You need to change Grub settings.
@@ -20,7 +20,7 @@ Now reboot your system.
 **Note:This works on other distros as well, but on those distros you need to add the line to GRUB_CMDLINE_LINUX_DEFAULT instead.**
 
 
-2. Apps not using dgpu while the gpu is set to hybrid.
+## 2. Apps not using dgpu while the gpu is set to hybrid.
 (This mostly happens on Arch-based distros) **(Not for fedora)**
 
 Fix: Install `switcheroo-control`.
@@ -35,7 +35,7 @@ Then enable and start it:
 After that, right-click on an app. If you see an option to run it with dedicated graphics, it should work fine.
 
 
-3. Battery drains fast.
+## 3. Battery drains fast.
 Fix: Install `auto-cpufreq`.
 
 Run these commands:
@@ -52,12 +52,12 @@ Then run:
 ***It manages CPU boost automatically, so you don’t need to do it manually.***
 
 
-4. Some keys like Fn+F5, Fn+F4, or Armory Crate key don’t work
+## 4. Some keys like Fn+F5, Fn+F4, or Armory Crate key don’t work
 This is normal and expected behavior. These keys aren’t fully supported.
 Check the post-install guide,it contains the steps to get them working again.
 
 
-5.Steps to Change Grub timeout
+## 5.Steps to Change Grub timeout
 Open the Grub config:
 `sudo nano /etc/default/grub`
 
@@ -72,7 +72,7 @@ Then update Grub:
 ***Note: Your system will wait for the full countdown before booting.***
 
 
-6.Black screen or system doesn’t boot after installing NVIDIA drivers
+## 6.Black screen or system doesn’t boot after installing NVIDIA drivers
 
 This can happens if the Nvidia drivers aren’t installed properly.
 You can try disabling Secure Boot in the Bios. Secure Boot prevents unsigned Nvidia drivers from loading.
@@ -80,7 +80,7 @@ After disabling it, the system should boot normally.
 Then, remove the drivers and reinstall them correctly.
 
 
-7. Need help with Linux?
+## 7. Need help with Linux?
 You can ask for help on these places:
 - Fedora Forums
 - r/Linux4Noobs
