@@ -5,7 +5,7 @@
 ## Linux
 
 * [Installing Linux](linux/installing-linux.md)
-* [Asus Tuf Linux Fixes & FAQ.md](linux/english-en/linux/Asus-Tuf-Linux-Fixes-&-FAQ.md)
+* [Asus Tuf Linux Fixes & FAQ.md](linux/linux%20fixes.md)
 
 ## Getting Started
 
