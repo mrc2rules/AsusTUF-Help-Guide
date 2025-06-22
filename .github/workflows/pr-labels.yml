@@ -1,0 +1,134 @@
+name: Add PR Labels
+
+on:
+  pull_request:
+    types: [opened, edited]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  label-language:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply Language Label
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const body = context.payload.pull_request.body;
+            const prNumber = context.payload.pull_request.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const languageMatch = body.match(/## Language\s*\n+([^\n]+)/i);
+            if (!languageMatch) {
+              return;
+            }
+
+            const language = languageMatch[1].trim();
+            if (!language) {
+              return;
+            }
+
+            const { data: currentLabels } = await github.rest.issues.listLabelsOnIssue({
+              owner,
+              repo,
+              issue_number: prNumber
+            });
+
+            for (const label of currentLabels) {
+              if (!(label.name.toLowerCase().includes("linux") || label.name.toLowerCase().includes("windows")) && label.name !== language) {
+                await github.rest.issues.removeLabel({
+                  owner,
+                  repo,
+                  issue_number: prNumber,
+                  name: label.name
+                });
+              }
+            }
+
+            let labelExists = true;
+            try {
+              await github.rest.issues.getLabel({
+                owner,
+                repo,
+                name: language
+              });
+            } catch (error) {
+              labelExists = false;
+            }
+
+            if (!labelExists) {
+              await github.rest.issues.createLabel({
+                owner,
+                repo,
+                name: language,
+                color: '5319e7',
+                description: `Locale label for ${language}`
+              });
+            }
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: prNumber,
+              labels: [language]
+            });
+
+  label-system:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply System Label
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const body = context.payload.pull_request.body;
+            const prNumber = context.payload.pull_request.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const validSystems = ['linux', 'windows'];
+
+            const systemSectionMatch = body.match(/## System([\s\S]*?)## /i) || body.match(/## System([\s\S]*)/i);
+            if (!systemSectionMatch) {
+              return;
+            }
+
+            const systemSection = systemSectionMatch[1];
+
+            const checkedSystems = [];
+            const regex = /- \[x\] (Linux|Windows)/gi;
+            let match;
+            while ((match = regex.exec(systemSection)) !== null) {
+              checkedSystems.push(match[1].toLowerCase());
+            }
+
+            if (checkedSystems.length === 0) {
+              return;
+            }
+
+            const { data: currentLabels } = await github.rest.issues.listLabelsOnIssue({
+              owner,
+              repo,
+              issue_number: prNumber
+            });
+
+            for (const label of currentLabels) {
+              const labelName = label.name.toLowerCase();
+              if (validSystems.includes(labelName) && !checkedSystems.includes(labelName)) {
+                await github.rest.issues.removeLabel({
+                  owner,
+                  repo,
+                  issue_number: prNumber,
+                  name: label.name
+                });
+              }
+            }
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: prNumber,
+              labels: checkedSystems
+            });
