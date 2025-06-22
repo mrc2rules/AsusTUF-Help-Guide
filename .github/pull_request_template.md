@@ -19,4 +19,4 @@ Locale codes for languages can be found [here](https://saimana.com/list-of-count
 
 - [ ] My checkboxes are correctly checked. Checked boxes look like [x] without spaces between the brackets and the x
 - [ ] This is not a duplicate pull request
-- [ ] My additions or modifications to the guide follows the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md)
+- [ ] My additions or modifications to the guide follows the guidelines in [CONTRIBUTING.md](../CONTRIBUTING.md)
