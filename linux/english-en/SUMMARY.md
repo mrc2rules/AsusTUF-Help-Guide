@@ -6,6 +6,7 @@
 
 * [Pre-installation](linux/Pre-installation.md)
 * [Installing Linux](linux/installing-linux.md)
+* [Troubleshooting](linux/troubleshooting.md)
 
 ## Getting Started
 
