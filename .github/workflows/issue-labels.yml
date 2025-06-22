@@ -1,0 +1,69 @@
+name: Add issue labels
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  label-language:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply Language Label
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const body = context.payload.issue.body;
+
+            const languageMatch = body.match(/### Language\s*\n+([^\n]+)/i);
+            if (!languageMatch) return;
+
+            const language = languageMatch[1].trim();
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issue_number = context.issue.number;
+
+            try {
+              await github.rest.issues.getLabel({
+                owner,
+                repo,
+                name: language
+              });
+
+              await github.rest.issues.addLabels({
+                owner,
+                repo,
+                issue_number,
+                labels: [language]
+              });
+            } catch (error) {
+              console.log(`Label "${language}" does not exist. Skipping.`);
+            }
+      
+  label-system:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply System Label
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const body = context.payload.issue.body;
+
+            const systemMatch = body.match(/### System\s*\n+([^\n]+)/i);
+            if (!systemMatch) return;
+
+            const system = systemMatch[1].trim().toLowerCase();
+            const validSystems = ['linux', 'windows'];
+
+            if (validSystems.includes(system)) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: [system]
+              });
+            }
