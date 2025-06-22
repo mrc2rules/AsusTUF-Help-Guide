@@ -1,0 +1,32 @@
+name: Addition
+description: Request to add new information
+labels: [addition]
+body:
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      description: What system is this related to
+      options:
+        - linux
+        - windows
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of the addition you are requesting.
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: "Agreements"
+      description: "Check the following before submitting the addition request."
+      options:
+        - label: "My title is concise but descriptive and specific."
+          required: true
+        - label: "I have searched for [existing addition requests](https://github.com/mrc2rules/AsusTUF-Help-Guide/issues?q=is:issue%20label:addition%20)."
+          required: true

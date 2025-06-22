@@ -1,0 +1,44 @@
+name: Correction
+description: Report incorrect information or suggest improvements
+labels: [correction]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      description: What language is this issue related to?
+      options:
+        - en-US
+        - de-DE
+        - ro-RO
+    validations:
+      required: true
+
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      description: What system is this related to
+      options:
+        - linux
+        - windows
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of the correction or improvement you are suggesting.
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: "Agreements"
+      description: "Check the following before submitting the correction request."
+      options:
+        - label: "My title is concise but descriptive and specific."
+          required: true
+        - label: "I have searched for [existing correction requests](https://github.com/mrc2rules/AsusTUF-Help-Guide/issues?q=is:issue%20label:correction%20)."
+          required: true

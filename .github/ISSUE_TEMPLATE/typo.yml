@@ -1,0 +1,44 @@
+name: typo
+description: Report a typo
+labels: [typo]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      description: What language is this issue related to?
+      options:
+        - en-US
+        - de-DE
+        - ro-RO
+    validations:
+      required: true
+
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      description: What system is this related to
+      options:
+        - linux
+        - windows
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of the typo you are reporting.
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: "Agreements"
+      description: "Check the following before submitting the typo report."
+      options:
+        - label: "My title is concise but descriptive and specific."
+          required: true
+        - label: "I have searched for [existing typo reports](https://github.com/mrc2rules/AsusTUF-Help-Guide/issues?q=is:issue%20label:typo%20)."
+          required: true
