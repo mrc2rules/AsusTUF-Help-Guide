@@ -1,8 +1,8 @@
 ### Asus Tuf Linux Fixes & FAQ
 
-## 1. Brightness not working in Hybrid or Eco mode.(But,works in ultimate/dgpu only mode)
+## 1. Brightness not working in Hybrid or Eco mode (But works in ultimate mode)
 
-Fix: You need to change Grub settings.
+Fix: Adjust Grub configurations
 
 Open terminal and type:
 `sudo nano /etc/default/grub`
@@ -18,13 +18,13 @@ Then update GRUB with:
 
 Now reboot your system.
 
-**Note:This works on other distros as well, but on those distros you need to add the line to GRUB_CMDLINE_LINUX_DEFAULT instead.**
+**Note: You may need to add the line to GRUB_CMDLINE_LINUX_DEFAULT instead for certain distros.**
 
-## 2. Apps not using dgpu while the gpu is set to hybrid.
+## 2. Apps are not using dGPU while the GPU mode is set to hybrid
 
-(This mostly happens on Arch-based distros) **(Not for fedora)**
+Note: This mostly happens on Arch-based distros **(Not for fedora)**
 
-Fix: Install `switcheroo-control`.
+Fix: Install `switcheroo-control`
 
 Run:
 `yay -S switcheroo-control`
@@ -33,11 +33,11 @@ Then enable and start it:
 `sudo systemctl enable switcheroo-control`
 `sudo systemctl start switcheroo-control`
 
-After that, right-click on an app. If you see an option to run it with dedicated graphics, it should work fine.
+After that, right-click on an app. The app should now run on dGPU if the option to run it with dedicated graphics was selected.
 
-## 3. Battery drains fast.
+## 3. Fast battery drainage
 
-Fix: Install `auto-cpufreq`.
+Fix: Install `auto-cpufreq`
 
 Run these commands:
 `git clone https://github.com/AdnanHodzic/auto-cpufreq.git`
@@ -50,14 +50,14 @@ Then run:
 `sudo systemctl enable auto-cpufreq`
 `sudo systemctl start auto-cpufreq`
 
-***It manages CPU boost automatically, so you don’t need to do it manually.***
+***Note: `auto-cpufreq` manages CPU boost automatically.***
 
-## 4. Some keys like Fn+F5, Fn+F4, or Armory Crate key don’t work
+## 4. Some keys like Fn+F5, Fn+F4, or Armoury Crate key (M4) don’t work
 
-This is normal and expected behavior. These keys aren’t fully supported.
-Check the post-install guide,it contains the steps to get them working again.
+This is normal and expected behavior. Certain keys aren’t fully supported.
+Check the post-install guide, it contains the steps to get them working again.
 
-## 5. Steps to Change Grub timeout
+## 5. Steps to change Grub timeout
 
 Open the Grub config:
 `sudo nano /etc/default/grub`
@@ -65,7 +65,7 @@ Open the Grub config:
 Look for this line:
 `GRUB_TIMEOUT=5`
 
-Change the number to how many seconds you want the menu to show. (Try to keep it under 60.)
+Change the number to how long in seconds you want the menu to show (It's suggested to keep the value under 60 seconds).
 
 Then update Grub:
 `sudo grub2-mkconfig -o /boot/grub2/grub.cfg`
@@ -74,16 +74,16 @@ Then update Grub:
 
 ## 6. Black screen or system doesn’t boot after installing NVIDIA drivers
 
-This can happens if the Nvidia drivers aren’t installed properly.
-You can try disabling Secure Boot in the Bios. Secure Boot prevents unsigned Nvidia drivers from loading.
+This can happen if NVIDIA drivers aren’t installed properly.
+You can try disabling Secure Boot in the BIOS. Secure Boot prevents unsigned NVIDIA drivers from loading.
 After disabling it, the system should boot normally.
 Then, remove the drivers and reinstall them correctly.
 
-## 7. Need help with Linux?
+## 7. Need some more help with Linux?
 
-You can ask for help on these places:
+You can ask for more help here:
 - Fedora Forums
 - r/Linux4Noobs
 - r/LinuxGaming
 - r/Fedora
-- [Asus Linux Discord:](https://discord.gg/B8GftRW2Hd)
+- [Asus Linux Discord](https://discord.gg/B8GftRW2Hd)
