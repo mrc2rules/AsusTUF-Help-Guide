@@ -25,6 +25,7 @@ Pre-installation Requirements
 - Fast Boot should be disabled in Windows(For dual boot only)
 
 # Asus Laptops and Linux Compatibility
+
 Asus laptops have excellent compatibility with Linux compared to many other laptop brands. Most of the software you need to control features (like RGB, CPU modes, and fan curves) is readily available on Linux. You can pretty much manage everything just like you would on Windows.
 Additionally, you can check the list of supported games on "Are We Anti-Cheat Yet" or proton db to see if your games work well on Linux.
 
@@ -39,13 +40,15 @@ A: GNOME and KDE are desktop environments. They basically handle how your deskto
 After you've downloaded the ISO, just run Rufus and burn the ISO to the USB drive. If you have Ventoy installed on the USB drive, just copy the ISO to the drive.
 
 # Dual Booting
-If you plan on dual booting (i.e., using both Linux and Windows at the same time), you need to create space for Fedora to be installed on.Dont create a new voume just leave it blank so the installer pickups up the mepty space.
 
-[Follow this guide](https://www.youtube.com/watch?v=eHQJMy8Q7Zk)
+If you plan on dual booting (i.e., using both Linux and Windows at the same time), you need to create space for Fedora to be installed on. Follow [this guide](https://www.youtube.com/watch?v=eHQJMy8Q7Zk) on how to dal boot Fedora and Linux.
 
-***Note: To go into the Bios, just hold the F2 key and press the power button. It should take you to the Bios. In the Bios, disable Secure Boot and drag the "Windows Boot Manager" below the USB drive, then save changes and exit.***
+***Note: Don't create a new volume, just create a blank partition for the Fedora installer to install the OS.***
+
+***Note: To go into the BIOS, hold the F2 key and press the power button. In the BIOS, disable Secure Boot and drag the "Windows Boot Manager" below the USB drive, then save changes and exit.***
 
 # Installing Fedora
+
 If you just plan on using Linux, then select "Use entire disk" during the setup and continue.
 
 # Uninstalling Fedora
@@ -57,13 +60,9 @@ If you just installed Fedora, then boot from the Windows installation media.
 Press Shift + F10
 
 Type:
-*diskpart*
+1. `diskpart`
+2. `Select disk X` Where X is the disk where Linux is installed
+3. `Clean disk`
+4. Continue with setup normally
 
-*Select disk X (X is wherever Linux is installed)*
-
-*Clean disk*
-
-After that, just continue with the setup normally.
-
-Note: Intel systems
-If it asks for drivers for the disk, just disable VMD in Bios.
+Note: For Intel systems, disable VMD in BIOS if it asks for drivers for the disk
