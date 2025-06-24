@@ -1,4 +1,4 @@
-
+---
 description: Scris de Zenith Zephyr
 icon: arrows-rotate-reverse
 layout:
@@ -12,6 +12,7 @@ layout:
     visible: false
   pagination:
     visible: true
+---
 
 # Instalarea Linuxului
 
