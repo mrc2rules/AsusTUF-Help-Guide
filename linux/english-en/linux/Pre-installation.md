@@ -20,12 +20,15 @@ Pre-installation Requirements:
 - A USB drive with at least 8 GB of storage capacity.
 
 - One of the following tools to create bootable media:
+-
 - ***Rufus, Ventoy, Balena Etcher, or Fedora Media Writer.***
 
 - Secure Boot must be disabled in the BIOS. 
+
   ***WARNING: Secure Boot can prevent Fedora from booting if not disabled.***
 
 - BitLocker must be turned off.
+
   ***WARNING: Failure to disable BitLocker may result in data loss or drive access issues.***
 
 - GPU mode should be set to "Ultimate" or "Standard" in Windows before installation.
@@ -85,11 +88,13 @@ Uninstalling Fedora:
 For dual boot setups: Follow the same video guide to remove Fedora safely.
 
 For standalone Fedora installations:
-   1. Boot from Windows installation media.
-   2. Press Shift + F10 to open the Command Prompt.
-    3. Run the following commands:
+1. Boot from Windows installation media.
+2. Press Shift + F10 to open the Command Prompt.
+3. Run the following commands:
        `diskpart`
+      
       `select disk X   (Replace 'X' with the number of the drive where Fedora is installed)`
+      
       `clean`
       4. Continue with the Windows setup normally.
 
