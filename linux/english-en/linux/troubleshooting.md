@@ -1,7 +1,11 @@
-# Asus TUF Linux Fixes & FAQ
+---
+hidden: true
+---
 
-1. Brightness Not Working in Hybrid or Eco Mode
-(Works in Ultimate / dGPU-only mode)
+# Troubleshooting
+
+1. Brightness Not Working in Hybrid or Eco Mode\
+   (Works in Ultimate / dGPU-only mode)
 
 Fix: You need to modify the GRUB settings.
 
@@ -9,11 +13,11 @@ Open a terminal and run:
 
 `sudo nano /etc/default/grub`
 
-Find this line:
-GRUB_CMDLINE_LINUX="`rhgb quiet`"
+Find this line:\
+GRUB\_CMDLINE\_LINUX="`rhgb quiet`"
 
-Replace it with:
-GRUB_CMDLINE_LINUX="`rhgb quiet pcie_aspm=force acpi_backlight=native`"
+Replace it with:\
+GRUB\_CMDLINE\_LINUX="`rhgb quiet pcie_aspm=force acpi_backlight=native`"
 
 Then update GRUB by running:
 
@@ -21,12 +25,10 @@ Then update GRUB by running:
 
 Finally, reboot your system.
 
-*Note: This method works on other distributions as well. On those, you may need to add the parameters to the line starting with GRUB_CMDLINE_LINUX_DEFAULT instead.*
+_Note: This method works on other distributions as well. On those, you may need to add the parameters to the line starting with GRUB\_CMDLINE\_LINUX\_DEFAULT instead._
 
-
-
-2. Apps Not Using Dedicated GPU (dGPU) While Set to Hybrid Mode
-(Mostly occurs on Arch-based distros; not for Fedora)
+2. Apps Not Using Dedicated GPU (dGPU) While Set to Hybrid Mode\
+   (Mostly occurs on Arch-based distros; not for Fedora)
 
 Fix: Install and enable switcheroo-control.
 
@@ -66,15 +68,13 @@ Then enable and start the service:
 
 `sudo systemctl start auto-cpufreq`
 
-
 {% hint style="info" %}
 Note: This tool automatically manages CPU performance and power saving, so you don't need to tweak CPU settings manually.
 {% endhint %}
 
-
 4. Some Keys Like Fn+F5, Fn+F4, or Armoury Crate Key Don’t Work
 
-This is expected behavior as these keys are not fully supported yet.
+This is expected behavior as these keys are not fully supported yet.\
 Check the post-install guide for steps to enable these keys.
 
 5. How to Change GRUB Timeout
@@ -83,8 +83,8 @@ Open the GRUB configuration file:
 
 `sudo nano /etc/default/grub`
 
-Find the line:
-GRUB_TIMEOUT=`5`
+Find the line:\
+GRUB\_TIMEOUT=`5`
 
 Change the number to your preferred timeout in seconds (try to keep it below 60).
 
@@ -96,24 +96,22 @@ Then update GRUB:
 Note: Your system will wait for the entire countdown before booting the default entry.
 {% endhint %}
 
-
 6. Black Screen or System Doesn’t Boot After Installing NVIDIA Drivers
 
 This usually happens if the NVIDIA drivers are not installed correctly.
 
 Fix:
-- Disable Secure Boot in BIOS, as it blocks unsigned NVIDIA drivers from loading.
-- After disabling Secure Boot, your system should boot normally.
-- Remove the existing NVIDIA drivers and reinstall them correctly.
 
+* Disable Secure Boot in BIOS, as it blocks unsigned NVIDIA drivers from loading.
+* After disabling Secure Boot, your system should boot normally.
+* Remove the existing NVIDIA drivers and reinstall them correctly.
 
 7. Need Help with Linux?
 
 You can get help from these communities:
-- Fedora Forums
-- r/Linux4Noobs
-- r/LinuxGaming
-- r/Fedora
-- [Asus Linux Discord](https://discord.gg/B8GftRW2Hd)
 
-
+* Fedora Forums
+* r/Linux4Noobs
+* r/LinuxGaming
+* r/Fedora
+* [Asus Linux Discord](https://discord.gg/B8GftRW2Hd)
