@@ -27,7 +27,7 @@ Spre deosebire de Windows, în general nu este necesar să instalezi drivere sup
 
 ## Pasul 2: Configurare software Asus și instalare drivere GPU
 
-Instrucțiunile necesare se găsesc pe site-ul Asus Linux: https://asus-linux.org/guides/fedora-guide/. Poți sări peste pașii de instalare de acolo și să începi direct din secțiunea de configurare. Urmează acești pași:
+Instrucțiunile necesare se găsesc pe site-ul [Asus Linux](https://asus-linux.org/guides/fedora-guide/). Poți sări peste pașii de instalare de acolo și să începi direct din secțiunea de configurare. Urmează acești pași:
 
 1. Actualizează Fedora
 2. Instalează driverele grafice Nvidia (sari peste dacă ai GPU AMD)
@@ -43,9 +43,9 @@ Poți ignora avertismentul „Asus kernel isn’t loaded” în _rog-control-cen
 
 # Comutarea modurilor GPU cu o interfață grafică
 
-*Dacă folosești GNOME, instalează extensia supergfxctl-gex: https://extensions.gnome.org/extension/5344/supergfxctl-gex/*
+*Dacă folosești GNOME, instalează extensia [supergfxctl-gex](https://extensions.gnome.org/extension/5344/supergfxctl-gex/)*
 
-*Dacă folosești KDE, va trebui să instalezi supergfxctl-plasmoid: https://gitlab.com/Jhyub/supergfxctl-plasmoid*
+*Dacă folosești KDE, va trebui să instalezi [supergfxctl-plasmoid](https://gitlab.com/Jhyub/supergfxctl-plasmoid)*
 
 Rulează următoarele comenzi pentru a-l instala:
 
