@@ -1,89 +1,119 @@
-### Asus Tuf Linux Fixes & FAQ
+# Asus TUF Linux Fixes & FAQ
 
-1. Brightness not working in Hybrid or Eco mode.(But,works in ultimate/dgpu only mode)
-Fix: You need to change Grub settings.
+1. Brightness Not Working in Hybrid or Eco Mode
+(Works in Ultimate / dGPU-only mode)
 
-Open terminal and type:
+Fix: You need to modify the GRUB settings.
+
+Open a terminal and run:
+
 `sudo nano /etc/default/grub`
 
 Find this line:
-`GRUB_CMDLINE_LINUX="rhgb quiet"`
+GRUB_CMDLINE_LINUX="`rhgb quiet`"
 
 Replace it with:
-`GRUB_CMDLINE_LINUX="rhgb quiet pcie_aspm=force acpi_backlight=native"`
+GRUB_CMDLINE_LINUX="`rhgb quiet pcie_aspm=force acpi_backlight=native`"
 
-Then update GRUB with:
+Then update GRUB by running:
+
 `grub2-mkconfig -o /boot/grub2/grub.cfg`
 
-Now reboot your system.
+Finally, reboot your system.
 
-**Note:This works on other distros as well, but on those distros you need to add the line to GRUB_CMDLINE_LINUX_DEFAULT instead.**
+*Note: This method works on other distributions as well. On those, you may need to add the parameters to the line starting with GRUB_CMDLINE_LINUX_DEFAULT instead.*
 
 
-## 2. Apps not using dgpu while the gpu is set to hybrid.
-(This mostly happens on Arch-based distros) **(Not for fedora)**
 
-Fix: Install `switcheroo-control`.
+2. Apps Not Using Dedicated GPU (dGPU) While Set to Hybrid Mode
+(Mostly occurs on Arch-based distros; not for Fedora)
+
+Fix: Install and enable switcheroo-control.
 
 Run:
+
 `yay -S switcheroo-control`
 
-Then enable and start it:
+Then enable and start the service:
+
 `sudo systemctl enable switcheroo-control`
+
 `sudo systemctl start switcheroo-control`
 
-After that, right-click on an app. If you see an option to run it with dedicated graphics, it should work fine.
+After that, right-click on the application. If you see an option to run it with the dedicated GPU, it means Switcheroo is installed and enabled
 
+{% hint style="info" %}
+Note: This service manages GPU switching, allowing apps to use the dedicated GPU on demand.
+{% endhint %}
 
-## 3. Battery drains fast.
-Fix: Install `auto-cpufreq`.
+3. Battery Drains Fast
+
+Fix: Install auto-cpufreq to manage CPU frequency and boost automatically.
 
 Run these commands:
+
 `git clone https://github.com/AdnanHodzic/auto-cpufreq.git`
+
 `cd auto-cpufreq`
+
 `sudo ./auto-cpufreq`
 
-Follow the prompts and install the daemon by clicking "Install" in the app.
+Follow the prompts and select Install to enable the daemon.
 
-Then run:
+Then enable and start the service:
+
 `sudo systemctl enable auto-cpufreq`
+
 `sudo systemctl start auto-cpufreq`
 
-***It manages CPU boost automatically, so you don’t need to do it manually.***
+
+{% hint style="info" %}
+Note: This tool automatically manages CPU performance and power saving, so you don't need to tweak CPU settings manually.
+{% endhint %}
 
 
-## 4. Some keys like Fn+F5, Fn+F4, or Armory Crate key don’t work
-This is normal and expected behavior. These keys aren’t fully supported.
-Check the post-install guide,it contains the steps to get them working again.
+4. Some Keys Like Fn+F5, Fn+F4, or Armoury Crate Key Don’t Work
 
+This is expected behavior as these keys are not fully supported yet.
+Check the post-install guide for steps to enable these keys.
 
-## 5.Steps to Change Grub timeout
-Open the Grub config:
+5. How to Change GRUB Timeout
+
+Open the GRUB configuration file:
+
 `sudo nano /etc/default/grub`
 
-Look for this line:
-`GRUB_TIMEOUT=5`
+Find the line:
+GRUB_TIMEOUT=`5`
 
-Change the number to how many seconds you want the menu to show. (Try to keep it under 60.)
+Change the number to your preferred timeout in seconds (try to keep it below 60).
 
-Then update Grub:
+Then update GRUB:
+
 `sudo grub2-mkconfig -o /boot/grub2/grub.cfg`
 
-***Note: Your system will wait for the full countdown before booting.***
+{% hint style="info" %}
+Note: Your system will wait for the entire countdown before booting the default entry.
+{% endhint %}
 
 
-## 6.Black screen or system doesn’t boot after installing NVIDIA drivers
+6. Black Screen or System Doesn’t Boot After Installing NVIDIA Drivers
 
-This can happens if the Nvidia drivers aren’t installed properly.
-You can try disabling Secure Boot in the Bios. Secure Boot prevents unsigned Nvidia drivers from loading.
-After disabling it, the system should boot normally.
-Then, remove the drivers and reinstall them correctly.
+This usually happens if the NVIDIA drivers are not installed correctly.
+
+Fix:
+- Disable Secure Boot in BIOS, as it blocks unsigned NVIDIA drivers from loading.
+- After disabling Secure Boot, your system should boot normally.
+- Remove the existing NVIDIA drivers and reinstall them correctly.
 
 
-## 7. Need help with Linux?
-You can ask for help on these places:
+7. Need Help with Linux?
+
+You can get help from these communities:
 - Fedora Forums
 - r/Linux4Noobs
 - r/LinuxGaming
 - r/Fedora
-- [Asus Linux Discord:](https://discord.gg/B8GftRW2Hd)
+- [Asus Linux Discord](https://discord.gg/B8GftRW2Hd)
+
+
