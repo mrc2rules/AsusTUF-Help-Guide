@@ -6,65 +6,72 @@ icon: bullseye-arrow
 
 <div align="center" data-full-width="false"><figure><img src="../.gitbook/assets/image (19).png" alt="An Asus TUF Laptop" width="188"><figcaption></figcaption></figure></div>
 
-Welcome to the ASUS TUF community. Congratulations on your new device! This guide will help you get started.&#x20;
+Bine ai venit in comunitatea ASUS TUF! Felicitari pentru noul tău dispozitiv! Acest ghid te va ajuta sa incepi.&#x20;
 
-## 🪄 The Essentials
+## 🪄 Esențiale
 
 {% stepper %}
 {% step %}
-### Inspect for damage
+### Asigură starea laptopului
 
-Make sure it's free of any physical defects or screen issues like dead pixels. It's rare, but a good idea to be careful!
+Asigură-te ca laptopul nu a suferit daune fizice sau ecranul are probleme, precum pixeli morți. Se întampla rar, dar este bine să fi grijuliu!. It's rare, but a good idea to be careful!
 {% endstep %}
 
 {% step %}
-### Update Windows
+### Actualizează Windows
 
-After completing the initial setup, update your operating system. Go to _Settings_ > _Update & Security_ > _Windows Update_ and click _Check for updates_. This ensures you have the latest features and security patches.
+Dupa completarea setup-ului inițial, actualizează-ți sistemul de opereare. Go to _Settings_ > _Update & Security_ > _Windows Update_ and click _Check for updates_. This ensures you have the latest features and security patches.
 {% endstep %}
 
 {% step %}
-### Update NVIDIA and AMD Drivers
+### Actualizează driverele NVIDIA sau AMD
 
-Open the '[NVIDIA](https://www.nvidia.com/en-us/software/nvidia-app/)' and '[AMD Adrenalin](https://www.amd.com/en/products/software/adrenalin.html)' app to update your graphics drivers. This is crucial for optimal performance.&#x20;
+Deschide aplicatia '[NVIDIA](https://www.nvidia.com/en-us/software/nvidia-app/)' sau '[AMD Adrenalin](https://www.amd.com/en/products/software/adrenalin.html)' pentru a actualiza driverele plăcii grafice. Este crucial pentru perfomanță optimă.&#x20;
 
 Avoid updating graphics drivers from Windows Update/MyAsus as they can be pretty old.
 {% endstep %}
 
 {% step %}
-### Register your device
+### Înregistrare dispozitiv
 
-Use the MyAsus app or [https://account.asus.com/](https://account.asus.com/) and register your laptop's serial key for warranty support
+Folosește aplicația MyAsus sau intră pe [https://account.asus.com/](https://account.asus.com/) si înregistrează-ți cheia seria a laptopului pentru support la garanție.
+
+{% hint style="danger" %}
+**Notă:**\
+Pentru clienții eMAG sau Altex care au cumpărat garanție in plus, acest pas nu este necesar.
+Această garanție este cea de la ASUS, care nu are de a face cu cele de la eMAG sau Altex!
+{% endhint %}
+
 {% endstep %}
 {% endstepper %}
 
-## 💻 The Next Steps
+## 💻 Pașii următori
 
 {% stepper %}
 {% step %}
-### Uninstall bloat software
+### Dezinstalare bloat
 
-Delete apps you don't need, **including pre-installed antivirus like** **McAfee, Norton** etc. They create unnecessary overhead and slow down your PC.
+Șterge aplicații de care nu ai nevoie, **inclusiv aplicații anti-virus preinstalați precum** **McAfee, Norton** etc. Ei utilizează resurse in mod inutil și îți încetinesc PC-ul.
 
-Windows Defender is there by default and enough to protect your PC.
+Windows Defender este destul pentru a-ți proteja laptopul.
 {% endstep %}
 
 {% step %}
-### Install GHelper (Recommended but optional)
+### Instalare GHelper (Recomandat dar opțional)
 
-<div align="left"><figure><img src="../.gitbook/assets/image (20).png" alt="" width="126"><figcaption><p>GHelper UI</p></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/image (20).png" alt="" width="126"><figcaption><p>Interfața GHelper</p></figcaption></figure></div>
 
-GHelper is an open-source, minimalistic and lightweight alternative to Armoury Crate for managing performance, fan curves, power settings and more, on your TUF laptop.&#x20;
+GHelper este o alternativă open-source, minimalistă și mai ușoară la Armoury Crate pentru gestionarea performanței, curbelor ventilatoarelor, setărilor de alimentare și multe altele, pe laptopul tău TUF.
 
-Unlike AC, which is buggy, bloated and RAM-heavy, GHelper runs in the background with minimal impact on system performance. It has **all** the features BUT without unnecessary extras - and with a much cleaner UI.
+Spre deosebire de AC, care este plin de bug-uri, încărcat și consumă multă memorie RAM, GHelper rulează în fundal cu impact minim asupra performanței sistemului. Are **toate** funcțiile necesare, dar fără extra-uri inutile – și cu o interfață mult mai curată.
 
-[Click here for the tutorial](installing-ghelper.md) - [installing-ghelper.md](installing-ghelper.md "mention")
+[Click aici pentru tutorial](installing-ghelper.md) - [installing-ghelper.md](installing-ghelper.md "mention")
 {% endstep %}
 
 {% step %}
-### Head over to basics
+### Către Basics
 
-If you're done with all of these, proceed to [Broken link](broken-reference "mention") for more information on how to maintain your TUF laptop
+Dacă ai terminat cu toate acestea, dute la [Broken link](broken-reference "mention") pentru mai multe informații despre menținerea performanței laptop-ului.
 
 
 {% endstep %}
