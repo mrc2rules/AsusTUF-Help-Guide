@@ -1,4 +1,4 @@
-
+---
 description: scris de Zenith Zephyr, tradus de Scott
 icon: arrows-rotate-reverse
 layout:
@@ -12,7 +12,7 @@ layout:
     visible: false
   pagination:
     visible: true
-
+---
 # Instalarea Linux
 
 ## Pasul 1: Configurare post-instalare
@@ -63,8 +63,8 @@ Apoi, în terminal, setează modul GPU pe Hybrid:
 `supergfxctl --mode Hybrid`
 
 
-După reîncărcarea shell-ului, o pictogramă cu un cip ar trebui să apară în bara de activități. Poți folosi această pictogramă pentru a comuta modurile GPU printr-o interfață grafică fără a mai folosi terminalul.  
-Repornește sistemul și, voila! Modurile GPU ar trebui să funcționeze perfect și să fie controlabile din interfață.
+După reîncărcarea shell-ului, o pictogramă cu un cip ar trebui să apară în bara de activități. Poți folosi această pictogramă pentru a comuta între modurile de GPU printr-o interfață grafică fără a mai folosi terminalul.  
+Repornește sistemul și, voila! Modurile de GPU ar trebui să funcționeze perfect și să fie controlabile din interfață.
 
 **Notă:**  
 Comutarea modului GPU înspre sau dinspre *Hybrid* necesită delogare și logare din nou. Modul *Ultimate* funcționează similar cu Windows și necesită o repornire completă a sistemului.
@@ -72,7 +72,7 @@ Comutarea modului GPU înspre sau dinspre *Hybrid* necesită delogare și logare
 ## Pasul 3: Remedierea tastelor rapide
 
 **Avertisment:**  
-Unele funcții ale tastelor rapide sunt gestionate direct de BIOS, ceea ce înseamnă că input-ul nu ajung la sistemul de operare și nu pot fi re-mapate.  
+Unele funcții ale tastelor rapide sunt gestionate direct de BIOS, ceea ce înseamnă că input-ul nu poate ajunge la sistemul de operare și nu pot fi re-mapate.  
 Pentru a verifica dacă o tastă poate fi re-mapată, apasă combinația dorită în timp ce creezi comanda rapidă.  
 Dacă este înregistrată, re-maparea este posibilă; dacă nu, va trebui să alegi o altă combinație diferită.
 
