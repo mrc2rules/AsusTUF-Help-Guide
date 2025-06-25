@@ -14,6 +14,8 @@
 * [GPU Performance Optimization](basics/gpu-performance-optimization.md)
 * [Interactive blocks](basics/interactive-blocks.md)
 * [Integrations](basics/integrations.md)
+* [Windows Debloat](basics/Debloating%20Windows.md)
+
 
 ## Repairing
 
