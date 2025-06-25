@@ -20,7 +20,7 @@ Pre-installation Requirements:
 - A USB drive with at least 8 GB of storage capacity.
 
 - One of the following tools to create bootable media:
--
+
 - ***Rufus, Ventoy, Balena Etcher, or Fedora Media Writer.***
 
 - Secure Boot must be disabled in the BIOS. 
@@ -90,13 +90,21 @@ For dual boot setups: Follow the same video guide to remove Fedora safely.
 For standalone Fedora installations:
 1. Boot from Windows installation media.
 2. Press Shift + F10 to open the Command Prompt.
+
 3. Run the following commands:
-       `diskpart`
-      
-      `select disk X   (Replace 'X' with the number of the drive where Fedora is installed)`
-      
-      `clean`
-      4. Continue with the Windows setup normally.
+
+    `diskpart`
+
+
+   `select disk X`
+ (Replace 'X' with the number of the drive where Fedora is installed)
+
+    `clean`
+
+
+4. Continue with the Windows setup normally.
+
+
 
 NOTE for Intel systems:
 If the Windows installer does not detect your disk, disable VMD (Volume Management Device) in BIOS.
