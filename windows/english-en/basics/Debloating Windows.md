@@ -32,7 +32,7 @@ These apps serve little real purpose and only waste system resources that could 
 
 
 
-### Q: Don’t I Need an Antivirus?
+## Q: Don’t I Need an Antivirus?
 
 No, not anymore.
 In 2025, you don’t need third-party antivirus software, especially not McAfee or Norton. They’re known for slowing down systems, selling user data, and providing subpar protection.
