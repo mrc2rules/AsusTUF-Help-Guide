@@ -18,11 +18,8 @@ Want to contribute? Read below!
    - [Message us via ModMail on Reddit](https://www.reddit.com/message/compose?to=%2Fr/Asustuf&subject=AsusTUF%20Guide%20Contribution%20Request&message=Hello!%20I%20have%20some%20suggestions%20and%20ideas%20for%20the%20guide.%20TYPESUGGESTIONSHERE%20)
  
 - If you want to contribute directly, you should:
-  - Read [Guidelines](#guidelines) first and [fork this repository](https://github.com/mrc2rules/AsusTUF-Help-Guide/fork) 
-  - Then, you can:
-       - [Create a new page](#newpage), or
-       - [Contribute to an existing page](#oldpage)
-  - Finally, create and submit a pull request.
+  - [Fork this repository](https://github.com/mrc2rules/AsusTUF-Help-Guide/fork) and create a pull request.
+  
 
 ## Guidelines <a name="guidelines"></a>
 
@@ -48,7 +45,7 @@ After proofreading your newly written content and ensuring it follows proper mar
 hidden: true
 ---
 ```
-This is required because pages need to be manually reviewed and properly formatted via the GitBook visual editor to appear well-organized and visually appealing. GitBook’s visual editor supports various content blocks that help your content look clean, organized, and visually appealing. 
+This is required because pages need to be manually reviewed and properly formatted via the GitBook visual editor. GitBook’s visual editor supports various content blocks that help the content look clean, organized, and visually appealing. 
 
 > [!IMPORTANT]
 > You'll need to add your page to the `SUMMARY.md` file so that it displays on the site's table of contents.
@@ -76,7 +73,7 @@ It will look like this:
 ---
 Next, simply add a new line under your content-relevant page group in the `* [Your page's title](page1/example1.md)` format.
 
-If none of the groups include your content, you may add a new group by simply adding `## GROUP NAME HERE` in a new line.
+If none of the groups are suitable for your content, you may add a new group by simply adding `## GROUP NAME HERE` in a new line.
 
 > [!NOTE]  
 > The directory link must only include the section inside the language directory.
