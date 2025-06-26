@@ -51,12 +51,16 @@ Additionally, you can verify game compatibility and anti-cheat support using:
    https://fedoraproject.org/en/workstation/download
 
    Recommended edition: Fedora Workstation (GNOME)
+   
    Alternative option: Fedora Workstation (KDE)
 
    Q: What do "GNOME" and "KDE" mean?
+   
    A: These are desktop environments that define the look and feel of your system interface.
-      - GNOME resembles macOS.
-      - KDE is similar to Windows 10.
+   
+   - GNOME resembles macOS.
+   
+   - KDE is similar to Windows 10.
 
 ### 2. Once downloaded:
    - If using Rufus:
