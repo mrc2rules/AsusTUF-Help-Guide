@@ -47,7 +47,7 @@ Additionally, you can verify game compatibility and anti-cheat support using:
 
 # Creating Bootable Media:
 
-### 1. Download the latest Fedora ISO from the official website:
+## 1. Download the latest Fedora ISO from the official website:
    https://fedoraproject.org/en/workstation/download
 
    Recommended edition: Fedora Workstation (GNOME)
@@ -62,7 +62,7 @@ Additionally, you can verify game compatibility and anti-cheat support using:
    
    - KDE is similar to Windows 10.
 
-### 2. Once downloaded:
+## 2. Once downloaded:
    - If using Rufus:
    - Open the tool, select the ISO, and write it to the USB drive.
    - If using Ventoy:
