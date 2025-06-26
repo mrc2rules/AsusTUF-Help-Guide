@@ -15,11 +15,11 @@ layout:
     visible: true
 ---
 
-## What is Bloatware and Why You Should Remove It
+# What is Bloatware and Why You Should Remove It
 
 Bloatware refers to pre-installed or unnecessary software that offers little value and often slows down your system. Manufacturers include these apps to promote services or generate revenue, but they usually consume memory, storage, and battery life.
   
-  # Why Remove Bloatware?
+  ## Why Remove Bloatware?
   1. Improves performance by reducing background processes.
   2. Frees up storage.
   3. Extends battery life.
@@ -27,7 +27,7 @@ Bloatware refers to pre-installed or unnecessary software that offers little val
 
 
 
-# Q: Don’t I Need an Antivirus?
+## Q: Don’t I Need an Antivirus?
 
 No, not anymore.
 In 2025, you don’t need third-party antivirus software, especially not McAfee or Norton. They’re known for slowing down systems, selling user data, and providing subpar protection.
@@ -40,14 +40,14 @@ Even though the tools used in this guide are safe and reputable, proceed with ca
 {% endhint %}
 
 
-## How to Remove Bloatware
-# 1) Clean Install (Recommended)
+# How to Remove Bloatware
+## 1) Clean Install (Recommended)
 
 If possible, perform a clean installation of Windows. It’s the most effective way to remove pre-installed junk. It resets your system and wipes out all manufacturer bloat.
 
 ***For instructions on how to perform a clean install, refer to the Clean Install Guide.***
 
-# 2) Removing Unnecessary Apps
+## 2) Removing Unnecessary Apps
 
 We recommend using the Windows Debloat script by [Raphire](https://github.com/Raphire/Win11Debloat).
 
@@ -95,7 +95,7 @@ These apps are deeply integrated, and uninstalling them from Settings will leave
 
 {% endhint %}
 
-# 3) Disabling Unnecessary Services (Advanced Tweaks)
+## 3) Disabling Unnecessary Services (Advanced Tweaks)
 
 We’ll use the **CTT Tool** (Chris Titus Tech's Windows Utility), which provides a clean GUI for installing apps, disabling services, and applying tweaks.
 
