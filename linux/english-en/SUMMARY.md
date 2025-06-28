@@ -4,14 +4,9 @@
 
 ## Linux
 
-* [Pre-installation](linux/Pre-installation.md)
-* [Installing Linux](linux/installing-linux.md)
+* [Installation (Fedora)](linux/Pre-installation.md)
+* [Post-installation](linux/installing-linux.md)
 * [Troubleshooting](linux/troubleshooting.md)
-
-## Getting Started
-
-* [Quickstart](getting-started/quickstart.md)
-* [Installing GHelper](getting-started/installing-ghelper.md)
 
 ## Basics
 
@@ -28,9 +23,3 @@
 ## Maintenance
 
 * [Cleaning Your Laptop](maintenance/cleaning-your-laptop.md)
-
-## Windows
-
-* [Installing Windows 11](windows/installing-windows-11.md)
-* [Display Driver Uninstaller Guide (DDU)](windows/display-driver-uninstaller-guide-ddu.md)
-* [Change Boot Logo](windows/change-boot-logo.md)

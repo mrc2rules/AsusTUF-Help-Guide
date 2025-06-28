@@ -1,112 +1,153 @@
 ---
-hidden: true
+icon: screwdriver-wrench
 ---
 
 # Troubleshooting
 
-1. Brightness Not Working in Hybrid or Eco Mode\
-   (Works in Ultimate / dGPU-only mode)
+### <mark style="color:orange;">1.</mark> <mark style="color:orange;"></mark><mark style="color:orange;">**Brightness not working in Hybrid or Eco mode**</mark> <mark style="color:orange;">**(But works in Ultimate / dGPU-only mode)**</mark>
 
-Fix: You need to modify the GRUB settings.
-
+<mark style="color:green;">**Fix:**</mark> You need to modify the GRUB settings.\
 Open a terminal and run:
 
-`sudo nano /etc/default/grub`
+```
+sudo nano /etc/default/grub
+```
 
-Find this line:\
-GRUB\_CMDLINE\_LINUX="`rhgb quiet`"
+\
+Find this line:
 
-Replace it with:\
-GRUB\_CMDLINE\_LINUX="`rhgb quiet pcie_aspm=force acpi_backlight=native`"
+```
+GRUB_CMDLINE_LINUX="rhgb quiet"
+```
 
+\
+Replace it with:
+
+```
+GRUB_CMDLINE_LINUX="rhgb quiet pcie_aspm=force acpi_backlight=native"
+```
+
+\
 Then update GRUB by running:
 
-`grub2-mkconfig -o /boot/grub2/grub.cfg`
+```
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
 
+\
 Finally, reboot your system.
 
-_Note: This method works on other distributions as well. On those, you may need to add the parameters to the line starting with GRUB\_CMDLINE\_LINUX\_DEFAULT instead._
+{% hint style="info" %}
+**Note:**&#x20;
 
-2. Apps Not Using Dedicated GPU (dGPU) While Set to Hybrid Mode\
-   (Mostly occurs on Arch-based distros; not for Fedora)
+This method works on other distributions as well. On those, you may need to add the parameters to the line starting with GRUB\_CMDLINE\_LINUX\_DEFAULT instead.
+{% endhint %}
 
-Fix: Install and enable switcheroo-control.
+### <mark style="color:orange;">2. Apps are not using dGPU While Set to Hybrid Mode</mark> <mark style="color:orange;">(Mostly occurs on Arch-based distros; not for Fedora)</mark>
+
+<mark style="color:green;">**Fix:**</mark> Install and enable switcheroo-control.
 
 Run:
 
-`yay -S switcheroo-control`
+{% code lineNumbers="true" %}
+```bash
+yay -S switcheroo-control
+```
+{% endcode %}
 
 Then enable and start the service:
 
-`sudo systemctl enable switcheroo-control`
-
-`sudo systemctl start switcheroo-control`
+{% code lineNumbers="true" %}
+```bash
+sudo systemctl enable switcheroo-control
+sudo systemctl start switcheroo-control
+```
+{% endcode %}
 
 After that, right-click on the application. If you see an option to run it with the dedicated GPU, it means Switcheroo is installed and enabled
 
 {% hint style="info" %}
-Note: This service manages GPU switching, allowing apps to use the dedicated GPU on demand.
+**Note:**&#x20;
+
+This service manages GPU switching, allowing apps to use the dedicated GPU on demand.
 {% endhint %}
 
-3. Battery Drains Fast
+### <mark style="color:orange;">3. Battery Drains Fast</mark>
 
-Fix: Install auto-cpufreq to manage CPU frequency and boost automatically.
+<mark style="color:green;">**Fix:**</mark> Install auto-cpufreq to manage CPU frequency and boost automatically.
 
 Run these commands:
 
-`git clone https://github.com/AdnanHodzic/auto-cpufreq.git`
-
-`cd auto-cpufreq`
-
-`sudo ./auto-cpufreq`
+{% code lineNumbers="true" %}
+```bash
+git clone https://github.com/AdnanHodzic/auto-cpufreq.git
+cd auto-cpufreq
+sudo ./auto-cpufreq
+```
+{% endcode %}
 
 Follow the prompts and select Install to enable the daemon.
 
 Then enable and start the service:
 
-`sudo systemctl enable auto-cpufreq`
-
-`sudo systemctl start auto-cpufreq`
+{% code lineNumbers="true" %}
+```bash
+sudo systemctl enable auto-cpufreq
+sudo systemctl start auto-cpufreq
+```
+{% endcode %}
 
 {% hint style="info" %}
-Note: This tool automatically manages CPU performance and power saving, so you don't need to tweak CPU settings manually.
+**Note:**&#x20;
+
+This tool automatically manages CPU performance and power saving, so you don't need to tweak CPU settings manually.
 {% endhint %}
 
-4. Some Keys Like Fn+F5, Fn+F4, or Armoury Crate Key Don’t Work
+### <mark style="color:orange;">4. Some Keys Like Fn+F5, Fn+F4, or Armoury Crate Key Don’t Work</mark>
 
 This is expected behavior as these keys are not fully supported yet.\
 Check the post-install guide for steps to enable these keys.
 
-5. How to Change GRUB Timeout
+### <mark style="color:orange;">5. How to Change GRUB Timeout</mark>
 
 Open the GRUB configuration file:
 
-`sudo nano /etc/default/grub`
+{% code lineNumbers="true" %}
+```basic
+sudo nano /etc/default/grub
+```
+{% endcode %}
 
 Find the line:\
-GRUB\_TIMEOUT=`5`
+`GRUB_TIMEOUT=5`
 
 Change the number to your preferred timeout in seconds (try to keep it below 60).
 
 Then update GRUB:
 
-`sudo grub2-mkconfig -o /boot/grub2/grub.cfg`
+{% code lineNumbers="true" %}
+```purebasic
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+{% endcode %}
 
 {% hint style="info" %}
-Note: Your system will wait for the entire countdown before booting the default entry.
+**Note:**&#x20;
+
+Your system will wait for the entire countdown before booting the default entry.
 {% endhint %}
 
-6. Black Screen or System Doesn’t Boot After Installing NVIDIA Drivers
+### <mark style="color:orange;">6. Black Screen or System Doesn’t Boot After Installing NVIDIA Drivers</mark>
 
 This usually happens if the NVIDIA drivers are not installed correctly.
 
-Fix:
+<mark style="color:green;">**Fix:**</mark>
 
 * Disable Secure Boot in BIOS, as it blocks unsigned NVIDIA drivers from loading.
 * After disabling Secure Boot, your system should boot normally.
 * Remove the existing NVIDIA drivers and reinstall them correctly.
 
-7. Need Help with Linux?
+## Need Additional Help with Linux?
 
 You can get help from these communities:
 
