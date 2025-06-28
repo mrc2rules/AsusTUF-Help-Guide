@@ -13,8 +13,6 @@
 * [Thermal Management](basics/thermal-management.md)
 * [Battery & Power](basics/battery-and-power.md)
 * [GPU Performance Optimization](basics/gpu-performance-optimization.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [Integrations](basics/integrations.md)
 
 ## Repairing
 
