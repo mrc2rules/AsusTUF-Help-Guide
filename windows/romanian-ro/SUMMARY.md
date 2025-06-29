@@ -12,8 +12,7 @@
 * [Thermal Management](basics/thermal-management.md)
 * [Baterie & Putere](basics/battery-and-power.md)
 * [Optimizarea performanței GPU](basics/gpu-performance-optimization.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [Integrații](basics/integrations.md)
+
 
 ## Reparare
 
