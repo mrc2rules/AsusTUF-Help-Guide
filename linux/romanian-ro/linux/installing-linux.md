@@ -1,5 +1,5 @@
 ---
-description: Written by Zenith Zephyr
+description: scris de Zenith Zephyr, tradus de Scott
 icon: arrows-rotate-reverse
 layout:
   title:
@@ -13,103 +13,75 @@ layout:
   pagination:
     visible: true
 ---
+# Instalarea Linux
 
-# Installing Linux
+## Pasul 1: Configurare post-instalare
 
-## Asus Laptops and Linux Compatibility
+Dacă ai o placă grafică Nvidia dedicată, va trebui să instalezi driverele Nvidia pentru Linux.
 
-Asus laptops have excellent compatibility with Linux compared to many other laptops brands. Most of the software you need to control features (like RGB, CPU modes, and fan curves) are readily available on Linux. You can pretty much manage everything just like you would on Windows.
+Dacă ai o placă grafică AMD dedicată, nu este nevoie să instalezi drivere suplimentare deoarece driverele open-source Mesa sunt deja incluse în kernelul Linux.
 
-Additionally, you can check the list of supported games on [Are We Anti-Cheat Yet](https://areweanticheatyet.com/) to see if your games work well on Linux.
+**Notă:**  
+Spre deosebire de Windows, în general nu este necesar să instalezi drivere suplimentare pentru majoritatea componentelor. Linux le gestionează, deobicei, automat.
 
-## Choosing The Right Distro
+## Pasul 2: Configurare software Asus și instalare drivere GPU
 
-Picking a Linux distro can be annoying, but I’ve found that Fedora is the best all around choice.
+Instrucțiunile necesare se găsesc pe site-ul Asus Linux: https://asus-linux.org/guides/fedora-guide/. Poți sări peste pașii de instalare de acolo și să începi direct din secțiunea de configurare. Urmează acești pași:
 
-The software support for Debian based distros is pretty limited - you’ll end up having to compile a lot of things from source. So, I’d recommend avoiding distros like Ubuntu or Mint. Not that they’re bad, just not ideal when it comes to software compatibility out of the box.
+1. Actualizează Fedora
+2. Instalează driverele grafice Nvidia (sari peste dacă ai placă AMD)
+3. Instalează asusctl și supergfxctl
 
-You can go with Fedora Workstation if you like a macOS like look, or Fedora KDE if you prefer something closer to Windows 10. Both work great.
+După instalarea supergfxctl, deschide terminalul și rulează:
 
-## Step 1: Installing Linux
-
-{% hint style="warning" %}
-**Note:**
-
-Set your GPU mode to “Ultimate” or “Standard” beforehand in Windows via GHelper/Armory Crate
-{% endhint %}
-
-* If you want to install **Linux only**,  just erase your disk during setup and tell the installer to install Fedora only.
-* If you want to **dual boot Fedora with Windows**, just follow this following linked YouTube guide step by step. -> [How to Dual Boot Fedora](https://youtu.be/kvnfccdTYQU)
-
-## Step 2: Post Install Configuration
-
-If you have an Nvidia dGPU, you’ll need to install the Nvidia drivers on Linux.&#x20;
-
-If you have an AMD dGPU, you don’t need to install any extra drivers because the open source Mesa drivers are already included in the Linux kernel.&#x20;
-
-{% hint style="info" %}
-**Note:**
-
-**U**nlike Windows, you generally don’t need to install additional drivers for other hardware. Linux usually handles that automatically.
-{% endhint %}
-
-## Step 3: Setting Up Asus Software
-
-The instructions you need are on the \[Asus Linux website]\(https://asus-linux.org/guides/fedora-guide/). You can skip the installation steps there and start from the Setup section. Just follow these parts:
-
-1. Update Fedora
-2. Install nvidia graphics drivers (skip if you have amd gpu)
-3. Install asusctl and supergfxctl
-
-After installing supergfxctl, open your terminal and run:
-
-`sudo systemctl enable supergfxd.service`
+`sudo systemctl enable supergfxd.service`  
 
 `sudo systemctl start supergfxd.service`
 
-You can ignore the “Asus kernel isn’t loaded” warning in _**rog-control-center**_.
+Poți ignora avertismentul „Asus kernel isn’t loaded” in _rog-control-center_.
 
-If you’re using gnome, install the supergfxctl-gex extension.
+# Comutarea modurilor de GPU cu o interfață grafică
 
-If you’re on KDE, run these commands:
+*Dacă folosești GNOME, instalează extensia supergfxctl-gex: https://extensions.gnome.org/extension/5344/supergfxctl-gex/*
+
+*Dacă folosești KDE, va trebui să instalezi supergfxctl-plasmoid: https://gitlab.com/Jhyub/supergfxctl-plasmoid*
+
+Rulează următoarele comenzi pentru a-l instala:
 
 `sudo dnf copr enable jhyub/supergfxctl-plasmoid`
 
+
 `sudo dnf install supergfxctl-plasmoid`
 
-Then, in the terminal, type:
+Reîncarcă Plasma pentru ca modificările să aibă efect:
+
+`plasmashell --replace &`
+
+
+Apoi, în terminal, setează modul GPU pe Hybrid:
 
 `supergfxctl --mode Hybrid`
 
-Reboot your system, and voila, GPU modes should be working perfectly, and you can control them via the GUI.
 
-## Step 4: Fixing hotkeys:
+După reîncărcarea shell-ului, o pictogramă cu un cip ar trebui să apară în bara de activități. Poți folosi această pictogramă pentru a comuta între modurile de GPU printr-o interfață grafică fără a mai folosi terminalul.  
+Repornește sistemul și, voila! Modurile de GPU ar trebui să funcționeze perfect și să fie controlabile din interfață.
 
-Some keys like the AC (Armoury Crate) key, Fn+F4, and Fn+F5 may not work by default in Linux. You can manually remap them in GNOME or KDE settings.
+**Notă:**  
+Comutarea modului GPU înspre sau dinspre *Hybrid* necesită delogare și logare din nou. Modul *Ultimate* funcționează similar cu Windows și necesită o repornire completă a sistemului.
 
-In GNOME, go to Settings > Keyboard > Keyboard Shortcuts, then click “+” to add a new shortcut.
+## Pasul 3: Remedierea tastelor rapide
 
-In KDE, go to System Settings > Shortcuts > Custom Shortcuts, then create a new Global Shortcut → Command/URL.
+**Avertisment:**  
+Unele funcții ale tastelor rapide sunt gestionate direct de BIOS, ceea ce înseamnă că input-ul nu poate ajunge la sistemul de operare și nu pot fi re-mapate.  
+Pentru a verifica dacă o tastă poate fi re-mapată, apasă combinația dorită în timp ce creezi comanda rapidă.  
+Dacă este înregistrată, re-maparea este posibilă; dacă nu, va trebui să alegi o altă combinație diferită.
 
-Set any name, press the key you want (e.g., Fn+F4), and enter the command:
+În GNOME, mergi la Setări > Tastatură > Comenzi rapide, apoi apasă „+” pentru a adăuga o nouă comandă.
 
-1.For Armoury Crate: `rog-control-center`
+În KDE, mergi la Setări de sistem > Comenzi rapide > Comenzi personalizate, apoi creează o comandă globală → Comandă/URL.
 
-2.For Aura Mode: `asusctl aura -n`
+Setează orice nume, apasă combinația dorită (ex: Fn+F4) și introdu comanda:
 
-3.For Performance Mode: `asusctl profile -n`
-
-Note: Fn+F5 may not be detected due to ACPI issues. If it doesn't register it, choose another key.
-
-## Additional Links & Support:
-
-Since most of us here on the subreddit are more familiar with Windows, support for Linux is pretty limited. For faster help, I recommend visiting communities like:
-
-1. [r/linux4noobs](https://www.reddit.com/r/linux4noobs/)
-2. [r/fedora](https://www.reddit.com/r/fedora/)
-3. Fedora Forums
-4. [Asus Linux Discord server](https://discord.gg/B8GftRW2Hd)
-5. [Gaming on Linux](https://youtu.be/BYIDoD8VdAw)
-
-And just so you know, I use Arch, btw!
-
+1. Pentru Armoury Crate: `rog-control-center`  
+2. Pentru modul Aura: `asusctl aura -n`  
+3. Pentru modul Performanță: `asusctl profile -n`

@@ -2,24 +2,22 @@
 
 * [Bine ai venit!](README.md)
 
-## Getting Started
+## Începere
 
 * [Quickstart](getting-started/quickstart.md)
-* [Installing GHelper](getting-started/installing-ghelper.md)
+* [Instalare GHelper](getting-started/installing-ghelper.md)
 
 ## Basics
 
 * [Thermal Management](basics/thermal-management.md)
-* [Battery & Power](basics/battery-and-power.md)
-* [GPU Performance Optimization](basics/gpu-performance-optimization.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [Integrations](basics/integrations.md)
+* [Baterie & Putere](basics/battery-and-power.md)
+* [Optimizare performanță GPU](basics/gpu-performance-optimization.md)
 
-## Repairing
+## Reparare
 
-* [Before you start](repairing/before-you-start.md)
+* [Pregatire](repairing/before-you-start.md)
 
-## Maintenance
+## Mentenanță
 
 * [Cleaning Your Laptop](maintenance/cleaning-your-laptop.md)
 
@@ -31,4 +29,4 @@
 
 ## Linux
 
-* [Installing Linux](linux/installing-linux.md)
+* [Instalare Linux](linux/installing-linux.md)

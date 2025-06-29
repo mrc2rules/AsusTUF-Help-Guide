@@ -12,8 +12,10 @@
 * [Thermal Management](basics/thermal-management.md)
 * [Battery & Power](basics/battery-and-power.md)
 * [GPU Performance Optimization](basics/gpu-performance-optimization.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [Integrations](basics/integrations.md)
+
+***
+
+* [Display Driver Uninstaller Guide (DDU)](display-driver-uninstaller-guide-ddu.md)
 
 ## Repairing
 
@@ -26,5 +28,5 @@
 ## Windows
 
 * [Installing Windows 11](windows/installing-windows-11.md)
-* [Display Driver Uninstaller Guide (DDU)](windows/display-driver-uninstaller-guide-ddu.md)
+* [Debloating Windows](windows/debloating-windows.md)
 * [Change Boot Logo](windows/change-boot-logo.md)
