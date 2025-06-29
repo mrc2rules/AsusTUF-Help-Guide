@@ -13,71 +13,71 @@ layout:
     visible: true
 ---
 
-# Change Boot Logo
+# Schimbarea Boot Logo
 
 {% hint style="danger" %}
 **Important:**\
-If you mess up the installation, your system may become unbootable! This software comes with no warranty. Use at your own risk.
+Dacă greșiți instalarea, sistemul dvs. poate deveni imposibil de bootat! Acest software nu oferă garanție. Utilizați-l pe propriul risc.
 
-* Make sure that your computer is booting with UEFI (Very likely that you do)
-* Make sure that BitLocker is disabled, or find your recovery key.
-* Create a full backup or a rescue disk before making any changes to the Windows boot logo. The backup or rescue disc helps you restore Windows if something goes wrong and you are unable to boot.
+* Asigurați-vă că computerul dvs. bootează cu UEFI (foarte probabil că da)
+* Asigurați-vă că BitLocker este dezactivat sau găsiți cheia de recuperare.
+* Creați o copie de rezervă completă sau un disc de salvare înainte de a face modificări la sigla de boot Windows. Copia de rezervă sau discul de salvare vă ajută să restaurați Windows dacă ceva nu merge bine și nu puteți boota.
 {% endhint %}
 
-## # First Time Installation
+## # Instalare pentru prima oară
 
-### Step 1: Download "HackBGRT"
+### Pasul 1: Descarcă "HackBGRT"
 
-To change the boot logo, we will use an open-source application called HackBGRT. Here’s how to use it.
+Pentru a schimba boot logo-ul, vom folosi o aplicație open-source numită HackBGRT. Iată pașii de folosire.
 
-1. Go to the [HackBGRT GitHub](https://github.com/Metabolix/HackBGRT/releases)
-2. Download the **latest release ZIP file**.
-3. Extract it to desktop/folder of your choice
+1. Dute la [HackBGRT GitHub](https://github.com/Metabolix/HackBGRT/releases)
+2. Descarcă **latest release ZIP file**.
+3. Extract la desktop/folder de alegerea ta.
 
-### Step 2: Using HackBGRT
+### Pasul 2: Folosirea HackBGRT
 
-1. Open the extracted folder, right-click on the **setup.exe** file, and select the **Run as administrator**\
+1. Deschide folder-ul extras, right-click pe **setup.exe** și selectează **Run as administrator**\
    \
    <img src="../.gitbook/assets/image (9).png" alt="" data-size="original">&#x20;
-2. It will open the app in command-line tool. \
-   \- **Press the i key** on your keyboard to proceed with a first time installation\
-   \- **Press the B key** to boot to UEFI setup where you can disable Secure Boot\
+2. Va deschide aplicația în command-line. \
+   \- **Apasă tasta i** pentru a intra în First Time Installation\
+   \- **Apasă tasta B** pentru a boota în UEFI setup unde poți opri S ecure Boot\
    \
    Additional:\
-   If you've set the boot logo already, and want to modify it, p**ress the F key** on your keyboard to modify the installation \
+   Dacă ai setat deja boot logo-ul și vrei să-l modifici, **apasă tasta F** pentru a modifica instalarea.\
    &#x20;\
    <img src="../.gitbook/assets/image (10).png" alt="" data-size="original">
-3. After you press a key, it will open the paint app
+3. După ce apeși orice tastă, va deschide Paint.
 
-### Step 3: Setting the logo
+### Step 3: Setând logo-ul
 
 {% hint style="info" %}
 **Note:**
 
-* You **cannot** set GIFs or transparent images as the new boot logo.
-* Keep the background of the logo black as transparency is not supported. Therefore, the new logo doesn’t look out of place on the black background of the boot screen.
-* The image should not be bigger than 300 x 300 pixels. While the size is not a strict requirement, it ensures that you will not face problems while setting the new boot logo.
+* Nu puteți seta GIF-uri sau imagini transparente ca noul logo de boot.
+* Păstrați fundalul logo-ului negru, deoarece transparența nu este acceptată. Prin urmare, noul logo nu arată nelalocul său pe fundalul negru al ecranului de boot.
+* Imaginea nu trebuie să fie mai mare de 300 x 300 pixeli. Deși dimensiunea nu este o cerință strictă, aceasta garantează că nu veți întâmpina probleme la setarea noului logo de boot.
 {% endhint %}
 
-1. In Paint, click on the **File** > **Import from Canvas** > **From file** option. Now, find the image you want to set as the new Windows boot logo, select it, and click on the **Open** button.
-2. If you want, you can resize the image by clicking on the **Resize** button.
-3. Once you are done, click **File** > **Save** to save the file. After saving, close the Paint application.
-4. Press a key to exit the cmd window.
+1. În Paint, dă click pe **File** > **Import from Canvas** > **From file**. Apoi, găsește imaginea pe care o vrei sa o setezi ca noul Boot Logo. Selectează-l it și click pe butonul **Open**.
+2. Dacă vrei, poți da click pe butonul **Resize**.
+3. Odată ce ai terminat, click pe **File** > **Save** pentru a salva fișierul. După salvare, Închide Paint.
+4. Apasă orice tastă pentru a ieși command line-ul.
 
-### Step 4: Rebooting / Secure Boot Instructions
+### Step 4: Reboot / Instrucțiuni pentru Secure Boot
 
-Since Secure Boot only accepts trusted files during boot, HackBGRT comes with the _shim_ boot loader, a tool which allows you to manually select HackBGRT as a trusted program.&#x20;
+Fiindcă Secure Boot acceptă doar fișiere de încredere la boot, HackBGRT vine cu _shim_ boot loader, o unealtă ce te lasă să seletezi HackBGRT ca un program de încredere.&#x20;
 
-After installing HackBGRT and rebooting your computer, **follow the instructions below** to complete the process.
+După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos** pentru a completa procesul.
 
 
 
-1. After rebooting, you will find this screen.\
+1. După reboot, vei vedea acest ecran.\
    \
    Select `OK`,  _Enter_.\
    ![](<../.gitbook/assets/image (11).png>)\
 
-2.  Next, press a key quickly
+2.  Apasă orice tastă repede
 
     ```
     Shim UEFI key management
@@ -86,7 +86,7 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
     ```
 
 
-3.  Select `Enroll hash from disk`, _Enter_.&#x20;
+3.  Selectează `Enroll hash from disk`, _Enter_.&#x20;
 
     ```
     Perform MOK management
@@ -97,14 +97,14 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
     ```
 
 
-4.  Select the first disk, _Enter_. (**Don't select "MyAsus"**)
+4.  Selectează primul disk, _Enter_. (**Nu selecta "MyAsus"!!**)
 
     ```
-    Select Binary
+    Selectează Binary
 
-    The Selected Binary will have its hash Enrolled
-    This means it will subsequently Boot with no prompting
-    Remember to make sure it is a genuine binary before enrolling its hash
+    Binary-ul selectat va avea hash-ul lui Enrolled.
+    Asta înseamnă ca nu se va da boot ulterior fară ca să dea prompt.
+    Asigură-te mereu ca binary-ul este autentic înainte să dai Enroll.
 
     +----------------+
     | YOUR DISK NAME |
@@ -112,7 +112,7 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
     ```
 
 
-5.  Select `EFI/`, _Enter_.
+5.  Selectează `EFI/`, _Enter_.
 
     ```
     +---------------+
@@ -123,7 +123,7 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
     ```
 
 
-6.  Select `HackBGRT/`, _Enter_.
+6.  Selectează `HackBGRT/`, _Enter_.
 
     ```
     +------------+
@@ -135,7 +135,7 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
     ```
 
 
-7.  Select `grubx64.efi`, _Enter_.
+7.  Selectează `grubx64.efi`, _Enter_.
 
     ```
     +-----------------+
@@ -150,7 +150,7 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
     ```
 
 
-8.  Select `Continue`, _Enter_.
+8.  Selectează `Continue`, _Enter_.
 
     ```
     [Enroll MOK]
@@ -162,7 +162,7 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
     ```
 
 
-9.  Select `Yes`, _Enter_.
+9.  Selectează `Yes`, _Enter_.
 
     ```
     Enroll the key(s)?
@@ -174,7 +174,7 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
     ```
 
 
-10. Select `Reboot`, _Enter_.
+10. Selectează `Reboot`, _Enter_.
 
     ```
     Perform MOK management
@@ -188,16 +188,16 @@ After installing HackBGRT and rebooting your computer, **follow the instructions
 
 
 
-You are now ready to boot! Congrats!
+Acum ești gata să dai boot! Felicitări
 
-## # Modifying Installation
+## # Modificare Instalație
 
-If you want to change the logo, rerun **setup.exe** as administrator and **press the F key** on your keyboard to modify the installation.
+Dacă vrei să schimbi logo-ul, re-rulează **setup.exe** ca administrator și **apasă tasta F** pe tastatură ca să modifici instalația.
 
-Remember to save the file in paint!
+Ține aminte să salvezi fișierul in paint!
 
 {% hint style="info" %}
-**For troubleshooting purposes,** [**please refer here**](https://github.com/Metabolix/HackBGRT/tree/v2.5.2?tab=readme-ov-file#troubleshooting)
+**Pentru troubleshooting,** [**dă click aici.**](https://github.com/Metabolix/HackBGRT/tree/v2.5.2?tab=readme-ov-file#troubleshooting)
 {% endhint %}
 
 \

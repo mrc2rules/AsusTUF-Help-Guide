@@ -1,23 +1,22 @@
 ---
-description: This article describes how to clean your laptop.
+description: Acest articol descrie cum să îți cureți laptopul.
 icon: broom-wide
 ---
 
-# Cleaning Your Laptop
+# Curățarea laptopului
 
-Laptops are often exposed to dust, hair, and other particles which can block cooling vents and ports of your laptop. This can lead to decreased system performance, and even at times shorten the hardware’s lifetime. We recommend that you regularly clean your laptop to ensure its longevity.
+Laptop-urile sunt deobicei expose la praf, păr și alte particule ce pot bloca ventilatoarele si porturile ale laptopului tău. Acest lucru poate duce la scăderea performanței sistemului și chiar poate scurta uneori durata de viață a hardware-ului. Vă recomandăm să curățați laptopul în mod regulat pentru a-i asigura longevitatea.
 
-## **Cleaning the LCD screen**
+## **Curățarea ecranului LCD**
 
-When cleaning the stains/fingerprints/dust from the display’s surface, please use a soft microfiber cleaning cloth dampened with 70 to 75% isopropyl alcohol or other LCD cleaning solutions, and wipe the screen **gently**. Ensure the cloth is damp and not soaking.&#x20;
+Pentru curățarea petelor/amprentelor/prafului de pe suprafața ecranului, vă rugăm să utilizați o lavetă moale din microfibră, umezită cu 70-75% alcool izopropilic sau alte soluții de curățare LCD și să ștergeți ecranul **ușor**. Asigurați-vă că laveta este umedă și nu îmbibată.
 
 {% hint style="warning" %}
-**Note**: **Do not spray any cleaning solutions directly onto the screen surface or leave any liquid on the screen when finishing.**
+**Notă**: **Nu pulverizați soluții de curățare direct pe suprafața ecranului și nu lăsați lichid pe ecran după finalizare.**
 {% endhint %}
 
-1. Spray isopropyl alcohol or LCD cleaning solution on the soft cloth to achieve **slight** dampness. Should the alcohol or cleaning solution drip from the cloth, please squeeze excess liquid before proceeding. Gently wipe the screen clean of any dirt or smudges.\
-   \
-   Water can also be used when other solutions are unavailable.
-2. Let the LCD screen dry completely after cleaning the screen before closing the lid.\
-   If there are still marks or steaking, gently wipe the surface with a dry cloth moving from the top of LCD panel to the bottom.
-
+1. Pulverizați alcool izopropilic sau soluție de curățare pentru LCD pe laveta moale pentru a obține o **ușoară** umiditate. Dacă alcoolul sau soluția de curățare picură de pe lavetă, stoarceți excesul de lichid înainte de a continua. Ștergeți ușor ecranul de murdărie sau pete.\
+\
+Se poate folosi și apă atunci când alte soluții nu sunt disponibile.
+2. Lăsați ecranul LCD să se usuce complet după curățarea acestuia înainte de a închide capacul.\
+Dacă există încă urme sau înțepături, ștergeți ușor suprafața cu o lavetă uscată, mișcându-vă din partea de sus a panoului LCD spre partea de jos.
