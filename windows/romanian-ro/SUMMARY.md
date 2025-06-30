@@ -13,7 +13,6 @@
 * [Baterie & Putere](basics/battery-and-power.md)
 * [Optimizarea performanței GPU](basics/gpu-performance-optimization.md)
 
-
 ## Reparare
 
 * [Pregătire](repairing/before-you-start.md)
