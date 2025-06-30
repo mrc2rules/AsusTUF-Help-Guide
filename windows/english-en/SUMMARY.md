@@ -12,10 +12,7 @@
 * [Thermal Management](basics/thermal-management.md)
 * [Battery & Power](basics/battery-and-power.md)
 * [GPU Performance Optimization](basics/gpu-performance-optimization.md)
-
-***
-
-* [Display Driver Uninstaller Guide (DDU)](display-driver-uninstaller-guide-ddu.md)
+* [Display Driver Uninstaller Guide (DDU)](basics/display-driver-uninstaller-guide-ddu.md)
 
 ## Repairing
 
