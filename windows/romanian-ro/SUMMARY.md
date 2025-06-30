@@ -5,28 +5,25 @@
 ## Getting Started
 
 * [Quickstart](getting-started/quickstart.md)
-* [Installing GHelper](getting-started/installing-ghelper.md)
+* [Instalare GHelper](getting-started/installing-ghelper.md)
 
 ## Basics
 
 * [Thermal Management](basics/thermal-management.md)
-* [Battery & Power](basics/battery-and-power.md)
-* [GPU Performance Optimization](basics/gpu-performance-optimization.md)
+* [Baterie & Putere](basics/battery-and-power.md)
+* [Optimizarea performanței GPU](basics/gpu-performance-optimization.md)
 
-## Repairing
+## Reparare
 
-* [Before you start](repairing/before-you-start.md)
+* [Pregătire](repairing/before-you-start.md)
 
-## Maintenance
+## Mentenanță
 
-* [Cleaning Your Laptop](maintenance/cleaning-your-laptop.md)
+* [Curățarea laptopului](maintenance/cleaning-your-laptop.md)
 
 ## Windows
 
-* [Installing Windows 11](windows/installing-windows-11.md)
-* [Display Driver Uninstaller Guide (DDU)](windows/display-driver-uninstaller-guide-ddu.md)
-* [Change Boot Logo](windows/change-boot-logo.md)
+* [Instalare Windows 11](windows/installing-windows-11.md)
+* [Ghidul Display Driver Uninstaller (DDU)](windows/display-driver-uninstaller-guide-ddu.md)
+* [Schimbarea Boot Logo-ului](windows/change-boot-logo.md)
 
-## Linux
-
-* [Installing Linux](linux/installing-linux.md)

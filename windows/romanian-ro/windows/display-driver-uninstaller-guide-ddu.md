@@ -13,74 +13,74 @@ layout:
     visible: true
 ---
 
-# Display Driver Uninstaller Guide (DDU)
+# Ghidul pentru Display Driver Uninstaller (DDU)
 
-This guide shows you how to completely remove your GPU drivers and reinstall it. Reinstalling GPU drivers will ensure a clean driver install and resolve any potential issues.
+Acest ghid vă arată cum să eliminați complet driverele pentru GPU și să îl reinstalați. Reinstalarea driverelor GPU va asigura instalarea și va rezolva eventualele probleme potențiale.
 
-**Reasons why you might need to do this:**
+**Motivele pentru care ar putea fi nevoie să faceți acest lucru:**
 
-* If you're having crashes/black-screen or artifacts/glitches on your screen.\
+* Dacă aveți accidente/ecran negru sau artefacte/glitch-uri pe ecran.\
   \
-  These issues could be caused by a faulty/corrupted GPU driver. Your laptop has 2 GPUs.\
-  — An **iGPU** (integrated in the processor) _<mark style="color:blue;">eg: Intel UHD/Iris graphics, AMD Radeon xxxM graphics</mark>_\
-  — A **dGPU** (dedicated graphics card) _<mark style="color:green;">eg: Nvidia RTX/GTX series, AMD Radeon RX series</mark>_\
+  Aceste probleme ar putea fi cauzate de un driver GPU defect/corupt. Laptopul tău are 2 GPU-uri.\
+  — Un **iGPU** (integrat în procesor) _<mark style="color:blue;">ex: Intel UHD/Iris graphics, AMD Radeon xxxM graphics</mark>_\
+  — A **dGPU** (placă grafică dedicată) _<mark style="color:green;">ex: Nvidia RTX/GTX series, AMD Radeon RX series</mark>_\
 
-* If you're having issues in **Standard/Eco/Optimized** modes, <mark style="color:yellow;">reinstall the iGPU driver</mark>.\
-  If you're having issues in **Ultimate** mode or **while playing games**, <mark style="color:yellow;">reinstall the dGPU driver</mark>.\
+* Dacă aveți probleme în modurile **Standard/Eco/Optimized**, <mark style="color:yellow;">reinstalați driverele iGPU</mark>.\
+  Dacă aveți probleme în modul **Ultimate** sau **când jucați**, <mark style="color:yellow;">reinstalați driverele dGPU</mark>.\
 
 
 {% hint style="danger" %}
-**BEFORE YOU START**
+**ÎNAINTE DE A ÎNCEPE**
 
-If you are reinstalling **dGPU drivers, switch to standard mode on GHelper/Armoury Crate**\
-If you are reinstalling **iGPU drivers, switch to ultimate mode on GHelper/Armoury Crate**,
+Dacă reinstalați **driverele dGPU, schimbați la modul Standard pe GHelper/Armoury Crate**\
+Dacă reinstalați **driverele iGPU, schimbați la modul Ultimate pe GHelper/Armoury Crate**,
 
-If you don't do this, you'll get a black screen after deleting the driver, requiring you to connect an external display to your laptop via the port that connects to your other functioning GPU.
+Dacă nu faceți asta, vei avea un ecran negru după ștergerea driverului, ar trebui să conectați un display/monitor extern la laptop prin portul care se conectează la celălalt GPU funcțional.
 {% endhint %}
 
-## Step 1: Download official drivers
+## Pasul 1: Descărcați drivere oficiale
 
-Download the newest drivers for your GPU from the manufacturer's website.&#x20;
+Descărcați cele mai noi drivere pentru GPU-ul dvs. de pe site-ul producătorului.&#x20;
 
 {% hint style="warning" %}
-**DO NOT install or run them yet**
+**NU le instalați sau le rulați încă!**
 {% endhint %}
 
 Nvidia: [https://www.nvidia.com/en-us/drivers/](https://www.nvidia.com/en-us/drivers/) \
 AMD: [https://www.amd.com/en/support/download/drivers.html](https://www.amd.com/en/support/download/drivers.html)&#x20;
 
-Save the driver installer on your desktop for easier access later. Preferably you'd want to have the latest driver because it will work best, especially with newer games as manufacturers often release bug fixes for them.
+Păstrați installerul on your desktop pentru access ușor mai târziu. Este de preferat daca sunt de ultima versiune fiindca va funcționa mai bine, în special cu jocuri noi fiindca producătorii deobicei lanseaza patch-uri pentru ele.
 
-## Step 2: Install DDU
+## Pasul 2: Instalare DDU
 
-This software will completely uninstall everything related to your driver without leaving any trace of it, allowing you to fresh install new drivers.
+Acest software va dezinstala complet tot ce este legat de drivere. fără a lăsa nicio urmă de ele, permițându-vă să instalați noi drivere noi.
 
 &#x20;[https://www.wagnardsoft.com/forums/viewtopic.php?t=5092](https://www.wagnardsoft.com/forums/viewtopic.php?t=5092)&#x20;
 
-Portable mode is easier,  just extract it to an empty folder on your desktop.
+Modul Portable este mai ușor, doar extrageți-l într-un folder gol de pe desktop.
 
-## Step 3: Preparing for DDU
+## Pasul 3: Pregătire pentru DDU
 
-1. Remove your internet connection completely (WiFi or ethernet). This prevents Windows from auto installing a GPU driver by itself through Windows Updates.
-2. Open DDU, then on the top left open the `Options` menu,&#x20;
-3. Tick the `Enable Safe Mode dialog` option, it is the second to last option.&#x20;
-4. Reopen DDU, it should give you a `launch option` menu. Click the launch option drop-down box menu and select `Safe mode`
-5. Your laptop will now restart and boot into safe mode. This is necessary to isolate any potential conflicts
-6. DDU should open automatically after the restart, if it doesn't, run it manually.
+1. Opriți complet conexiunea de la internet (WiFi sau ethernet). Acest lucru previne ca Windows să nu instaleze automat drivere din Windows Updates.
+2. Deschide DDU, apoi pe stânga sus deschide meniul `Options`,&#x20;
+3. Pornește opțiunea `Enable Safe Mode dialog`, este penultima opțiune.&#x20;
+4. Redeschide DDU, ar trebui sa îți apară meniul `launch option`. Click pe el și selectează `Safe mode`
+5. Laptopul tău iși va da restart în Safe Mode. Acest lucru este necesar pentru a nu cauza conflicte. 
+6. DDU ar trebui să se deschidă automat după restart, dacă nu, rulează -l manual.
 
-## Step 4: Using DDU
+## Pasul 4: Folosind DDU
 
-1. Once you're in DDU, there should be 2 drop-down menus on the right side, \
-   `-Select device type-` and `-Select device-`\
+1. Odată ce ai intrat în DDU, Ar trebui să existe 2 meniuri pe partea dreaptă, \
+   `-Select device type-` și `-Select device-`\
    \
-   Under the first menu, **select the GPU option**\
-   Under the second one, **select the GPU driver you want to uninstall.**&#x20;
-2. Then press `clean and restart`, wait until it automatically restarts.&#x20;
-3. Once it restarts, install the GPU driver you downloaded earlier, after it finishes the installation, restart your laptop and re enable the internet.
+   Sub primul meniu, **selectează opțiunea pentru GPU**\
+   Sub al doilea, **select the GPU driver you want to uninstall.**&#x20;
+2. Apoi apasă `clean and restart`, wait until it automatically restarts.&#x20;
+3. După restart, instalează driverele GPU driver descărcate mai devreme, apoi ce termină de instalat, dă restart la laptop si repornește internetul.
 
 
 
-_Adapted from @yamen76 's guide on AsusTUF discord_
+_Tradus și adaptat de la ghidul lui @yamen76 's pe AsusTUF discord_
 
 
 
