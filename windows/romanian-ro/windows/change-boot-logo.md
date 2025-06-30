@@ -13,7 +13,7 @@ layout:
     visible: true
 ---
 
-# Schimbarea Boot Logo
+# Schimbarea Boot Logo-ului
 
 {% hint style="danger" %}
 **Important:**\
@@ -26,30 +26,36 @@ Dacă greșiți instalarea, sistemul dvs. poate deveni imposibil de bootat! Aces
 
 ## # Instalare pentru prima oară
 
-### Pasul 1: Descarcă "HackBGRT"
+{% stepper %}
+{% step %}
+## Descarcă "HackBGRT"
 
 Pentru a schimba boot logo-ul, vom folosi o aplicație open-source numită HackBGRT. Iată pașii de folosire.
 
 1. Dute la [HackBGRT GitHub](https://github.com/Metabolix/HackBGRT/releases)
 2. Descarcă **latest release ZIP file**.
 3. Extract la desktop/folder de alegerea ta.
+{% endstep %}
 
-### Pasul 2: Folosirea HackBGRT
+{% step %}
+## Folosirea HackBGRT
 
 1. Deschide folder-ul extras, right-click pe **setup.exe** și selectează **Run as administrator**\
    \
-   <img src="../.gitbook/assets/image (9).png" alt="" data-size="original">&#x20;
-2. Va deschide aplicația în command-line. \
+   <img src="../.gitbook/assets/image (9).png" alt="" data-size="original">
+2. Va deschide aplicația în command-line.\
    \- **Apasă tasta i** pentru a intra în First Time Installation\
    \- **Apasă tasta B** pentru a boota în UEFI setup unde poți opri S ecure Boot\
    \
    Additional:\
    Dacă ai setat deja boot logo-ul și vrei să-l modifici, **apasă tasta F** pentru a modifica instalarea.\
-   &#x20;\
+   \
    <img src="../.gitbook/assets/image (10).png" alt="" data-size="original">
 3. După ce apeși orice tastă, va deschide Paint.
+{% endstep %}
 
-### Step 3: Setând logo-ul
+{% step %}
+## Setând logo-ul
 
 {% hint style="info" %}
 **Note:**
@@ -63,20 +69,19 @@ Pentru a schimba boot logo-ul, vom folosi o aplicație open-source numită HackB
 2. Dacă vrei, poți da click pe butonul **Resize**.
 3. Odată ce ai terminat, click pe **File** > **Save** pentru a salva fișierul. După salvare, Închide Paint.
 4. Apasă orice tastă pentru a ieși command line-ul.
+{% endstep %}
 
-### Step 4: Reboot / Instrucțiuni pentru Secure Boot
+{% step %}
+## Reboot / Instrucțiuni pentru Secure Boot
 
-Fiindcă Secure Boot acceptă doar fișiere de încredere la boot, HackBGRT vine cu _shim_ boot loader, o unealtă ce te lasă să seletezi HackBGRT ca un program de încredere.&#x20;
+Fiindcă Secure Boot acceptă doar fișiere de încredere la boot, HackBGRT vine cu _shim_ boot loader, o unealtă ce te lasă să seletezi HackBGRT ca un program de încredere.
 
 După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos** pentru a completa procesul.
 
-
-
 1. După reboot, vei vedea acest ecran.\
    \
-   Select `OK`,  _Enter_.\
-   ![](<../.gitbook/assets/image (11).png>)\
-
+   Select `OK`, _Enter_.\
+   ![](<../.gitbook/assets/image (11).png>)\\
 2.  Apasă orice tastă repede
 
     ```
@@ -84,9 +89,7 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos**
     Press any key to perform MOK management
     Booting in 5 seconds
     ```
-
-
-3.  Selectează `Enroll hash from disk`, _Enter_.&#x20;
+3.  Selectează `Enroll hash from disk`, _Enter_.
 
     ```
     Perform MOK management
@@ -95,8 +98,6 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos**
     Enroll key from disk
     Enroll hash from disk
     ```
-
-
 4.  Selectează primul disk, _Enter_. (**Nu selecta "MyAsus"!!**)
 
     ```
@@ -110,8 +111,6 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos**
     | YOUR DISK NAME |
     +----------------+
     ```
-
-
 5.  Selectează `EFI/`, _Enter_.
 
     ```
@@ -121,8 +120,6 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos**
     | vmlinuz-linux |
     +---------------+
     ```
-
-
 6.  Selectează `HackBGRT/`, _Enter_.
 
     ```
@@ -133,8 +130,6 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos**
     | Microsoft/ |
     +------------+
     ```
-
-
 7.  Selectează `grubx64.efi`, _Enter_.
 
     ```
@@ -148,8 +143,6 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos**
     |   config.txt    |
     +-----------------+
     ```
-
-
 8.  Selectează `Continue`, _Enter_.
 
     ```
@@ -160,8 +153,6 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos**
     |  Continue  |
     +------------+
     ```
-
-
 9.  Selectează `Yes`, _Enter_.
 
     ```
@@ -172,8 +163,6 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos**
     | Yes |
     +-----+
     ```
-
-
 10. Selectează `Reboot`, _Enter_.
 
     ```
@@ -186,9 +175,11 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai jos**
     +-----------------------+
     ```
 
-
-
 Acum ești gata să dai boot! Felicitări
+
+
+{% endstep %}
+{% endstepper %}
 
 ## # Modificare Instalație
 
@@ -199,5 +190,3 @@ Dacă vrei să schimbi logo-ul, re-rulează **setup.exe** ca administrator și *
 {% hint style="info" %}
 **Pentru troubleshooting,** [**dă click aici.**](https://github.com/Metabolix/HackBGRT/tree/v2.5.2?tab=readme-ov-file#troubleshooting)
 {% endhint %}
-
-\

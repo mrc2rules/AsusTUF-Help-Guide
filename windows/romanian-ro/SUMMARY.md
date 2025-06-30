@@ -5,13 +5,10 @@
 ## Getting Started
 
 * [Quickstart](getting-started/quickstart.md)
-* [Instalare GHelper](getting-started/installing-ghelper.md)
 
-## Basics
+## De bază
 
-* [Thermal Management](basics/thermal-management.md)
-* [Baterie & Putere](basics/battery-and-power.md)
-* [Optimizarea performanței GPU](basics/gpu-performance-optimization.md)
+* [Ghidul Display Driver Uninstaller (DDU)](de-baza/display-driver-uninstaller-guide-ddu.md)
 
 ## Reparare
 
@@ -23,7 +20,4 @@
 
 ## Windows
 
-* [Instalare Windows 11](windows/installing-windows-11.md)
-* [Ghidul Display Driver Uninstaller (DDU)](windows/display-driver-uninstaller-guide-ddu.md)
 * [Schimbarea Boot Logo-ului](windows/change-boot-logo.md)
-
