@@ -10,10 +10,6 @@
 
 * [Ghidul Display Driver Uninstaller (DDU)](de-baza/display-driver-uninstaller-guide-ddu.md)
 
-## Reparare
-
-* [Pregătire](repairing/before-you-start.md)
-
 ## Mentenanță
 
 * [Curățarea laptopului](maintenance/cleaning-your-laptop.md)
