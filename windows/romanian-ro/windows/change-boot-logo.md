@@ -2,15 +2,15 @@
 icon: rectangle-vertical-history
 layout:
   title:
-    visible: 'true'
+    visible: true
   description:
-    visible: 'true'
+    visible: true
   tableOfContents:
-    visible: 'true'
+    visible: true
   outline:
-    visible: 'false'
+    visible: false
   pagination:
-    visible: 'true'
+    visible: true
 ---
 
 # Schimbarea Boot Logo
@@ -167,7 +167,10 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai** jos
     +-----------------------+
     ```
 
-{% hint style="success" %} Acum ești gata să dai boot! {% endhint %} {% endstep %} {% endstepper %}
+{% hint style="success" %} Acum ești gata să dai boot! {% endhint %} 
+
+{% endstep %} 
+{% endstepper %}
 
 ## # Modificare Instalație
 
