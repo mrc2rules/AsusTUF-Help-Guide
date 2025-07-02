@@ -16,4 +16,4 @@
 
 ## Windows
 
-* [Schimbarea Boot Logo-ului](windows/schimbarea-boot-logo-ului.md)
+* [Schimbarea Boot Logo-ului](windows/change-boot-logo.md)
