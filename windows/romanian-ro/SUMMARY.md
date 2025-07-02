@@ -6,9 +6,9 @@
 
 * [Quickstart](getting-started/quickstart.md)
 
-## De bază
+## Basics
 
-* [Ghidul Display Driver Uninstaller (DDU)](de-baza/display-driver-uninstaller-guide-ddu.md)
+* [Ghidul Display Driver Uninstaller (DDU)](basics/display-driver-uninstaller-guide-ddu.md)
 
 ## Mentenanță
 
@@ -16,4 +16,4 @@
 
 ## Windows
 
-* [Schimbarea Boot Logo-ului](windows/change-boot-logo.md)
+* [Schimbarea Boot Logo-ului](windows/schimbarea-boot-logo-ului.md)
