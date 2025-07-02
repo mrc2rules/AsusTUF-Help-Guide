@@ -23,9 +23,9 @@ Acest ghid vă arată cum să eliminați complet driverele pentru GPU și să î
   \
   Aceste probleme ar putea fi cauzate de un driver GPU defect/corupt. Laptopul tău are 2 GPU-uri.\
   — Un **iGPU** (integrat în procesor) _<mark style="color:blue;">ex: Intel UHD/Iris graphics, AMD Radeon xxxM graphics</mark>_\
-  — A **dGPU** (placă grafică dedicată) _<mark style="color:green;">ex: Nvidia RTX/GTX series, AMD Radeon RX series</mark>_\\
+  — A **dGPU** (placă grafică dedicată) _<mark style="color:green;">ex: Nvidia RTX/GTX series, AMD Radeon RX series</mark>_
 * Dacă aveți probleme în modurile **Standard/Eco/Optimized**, <mark style="color:yellow;">reinstalați driverele iGPU</mark>.\
-  Dacă aveți probleme în modul **Ultimate** sau **când jucați**, <mark style="color:yellow;">reinstalați driverele dGPU</mark>.\\
+  Dacă aveți probleme în modul **Ultimate** sau **când jucați**, <mark style="color:yellow;">reinstalați driverele dGPU</mark>.
 
 {% hint style="danger" %}
 **ÎNAINTE DE A ÎNCEPE**
@@ -35,6 +35,8 @@ Dacă reinstalați **driverele iGPU, schimbați la modul Ultimate pe GHelper/Arm
 
 Dacă nu faceți asta, vei avea un ecran negru după ștergerea driverului, ar trebui să conectați un display/monitor extern la laptop prin portul care se conectează la celălalt GPU funcțional.
 {% endhint %}
+
+## # Steps
 
 {% stepper %}
 {% step %}
@@ -83,9 +85,7 @@ Modul Portable este mai ușor, doar extrageți-l într-un folder gol de pe deskt
    Sub al doilea, **select the GPU driver you want to uninstall.**
 2. Apoi apasă `clean and restart`, wait until it automatically restarts.
 3. După restart, instalează driverele GPU driver descărcate mai devreme, apoi ce termină de instalat, dă restart la laptop si repornește internetul.
-
-_Tradus și adaptat de la ghidul lui @yamen76 's pe AsusTUF discord_
-
-
 {% endstep %}
 {% endstepper %}
+
+_Tradus și adaptat de la ghidul lui @yamen76 's pe AsusTUF discord_
