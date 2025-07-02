@@ -15,7 +15,7 @@ layout:
 
 # Schimbarea Boot Logo
 
-{% hint style="danger" %} **Important:**<br> Dacă greșiți instalarea, sistemul dvs. poate deveni imposibil de bootat! Acest software nu oferă garanție. Utilizați-l pe propriul risc.
+{% hint style="danger" %} **Important:**<br> Dacă greșiți instalarea, sistemul dvs. poate deveni imposibil de bootat! Acest software nu oferă garanție. Utilizați-l pe propriul risc. {% endhint %}
 
 - Asigurați-vă că computerul dvs. bootează cu UEFI (foarte probabil că da)
 - Asigurați-vă că BitLocker este dezactivat sau găsiți cheia de recuperare.
