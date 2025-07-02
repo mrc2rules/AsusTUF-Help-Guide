@@ -58,8 +58,6 @@ Spre deosebire de AC, care este plin de bug-uri, încărcat și consumă multă 
 
 {% step %}
 
-{% step %}
-
 ### Către Basics
 
 Dacă ai terminat cu toate acestea, dute la [Broken link](broken-reference "mention") pentru mai multe informații despre menținerea performanței laptop-ului. {% endstep %} {% endstepper %}
