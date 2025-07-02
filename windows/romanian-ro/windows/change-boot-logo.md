@@ -167,10 +167,7 @@ După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai** jos
     +-----------------------+
     ```
 
-{% hint style="success" %} Acum ești gata să dai boot! {% endhint %} 
-
-{% endstep %} 
-{% endstepper %}
+{% hint style="success" %} Acum ești gata să dai boot! {% endhint %} {% endstep %} {% endstepper %}
 
 ## # Modificare Instalație
 
