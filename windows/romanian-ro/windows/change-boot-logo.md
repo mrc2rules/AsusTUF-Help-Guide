@@ -1,0 +1,180 @@
+---
+icon: rectangle-vertical-history
+layout:
+  title:
+    visible: 'true'
+  description:
+    visible: 'true'
+  tableOfContents:
+    visible: 'true'
+  outline:
+    visible: 'false'
+  pagination:
+    visible: 'true'
+---
+
+# Schimbarea Boot Logo
+
+{% hint style="danger" %} **Important:**<br> Dacă greșiți instalarea, sistemul dvs. poate deveni imposibil de bootat! Acest software nu oferă garanție. Utilizați-l pe propriul risc.
+
+- Asigurați-vă că computerul dvs. bootează cu UEFI (foarte probabil că da)
+- Asigurați-vă că BitLocker este dezactivat sau găsiți cheia de recuperare.
+- Creați o copie de rezervă completă sau un disc de salvare înainte de a face modificări la sigla de boot Windows. Copia de rezervă sau discul de salvare vă ajută să restaurați Windows dacă ceva nu merge bine și nu puteți boota. {% endhint %}
+
+## # Instalare pentru prima oară
+
+{% stepper %} {% step %}
+
+## Descarcă "HackBGRT"
+
+Pentru a schimba boot logo-ul, vom folosi o aplicație open-source numită HackBGRT. Iată pașii de folosire.
+
+1. Dute la [HackBGRT GitHub](https://github.com/Metabolix/HackBGRT/releases)
+2. Descarcă **latest release ZIP file**.
+3. Extract la desktop/folder de alegerea ta. {% endstep %}
+
+{% step %}
+
+## Folosirea HackBGRT
+
+1. Deschide folder-ul extras, right-click pe **setup.exe** file, și selectează **Run as administrator**<br> <br> <img src="../.gitbook/assets/image%20(9).png" data-size="original" alt="">
+2. Va deschide aplicația în command-line. <br> - **Apasă tasta i** pentru a intra în First Time Installation<br> - **Apasă tasta B** pentru a boota în UEFI setup unde poți opri Secure Boot<br> <br> Additional:<br> IDacă ai setat deja boot logo-ul și vrei să-l modifici, **apasă tasta F** pentru a modifica instalarea. <br>  <br> <img src="../.gitbook/assets/image%20(10).png" data-size="original" alt="">
+3. După ce apeși orice tastă, va deschide Paint. {% endstep %}
+
+{% step %}
+
+## Setând logo-ul
+
+{% hint style="info" %} **Note:**
+
+- Nu puteți seta GIF-uri sau imagini transparente ca noul logo de boot.
+- Păstrați fundalul logo-ului negru, deoarece transparența nu este acceptată. Prin urmare, noul logo nu arată nelalocul său pe fundalul negru al ecranului de boot.
+- Imaginea nu trebuie să fie mai mare de 300 x 300 pixeli. Deși dimensiunea nu este o cerință strictă, aceasta garantează că nu veți întâmpina probleme la setarea noului logo de boot. {% endhint %}
+
+1. În Paint, dă click pe File &gt; Import from Canvas &gt; From file. Apoi, găsește imaginea pe care o vrei sa o setezi ca noul Boot Logo. Selectează-l it și click pe butonul Open.
+2. Dacă vrei, poți da click pe butonul Resize.
+3. Odată ce ai terminat, click pe File &gt; Save pentru a salva fișierul. După salvare, Închide Paint.
+4. Apasă orice tastă pentru a ieși command line-ul. {% endstep %}
+
+{% step %}
+
+## Reboot / Instrucțiuni pentru Secure Boot
+
+Fiindcă Secure Boot acceptă doar fișiere de încredere la boot, HackBGRT vine cu shim boot loader, o unealtă ce te lasă să seletezi HackBGRT ca un program de încredere.
+
+După instalarea HackBGRT și reboot, **urmărește instrucțiunile de mai** jos pentru a completa procesul.
+
+1. După reboot, vei vedea acest ecran.<br><br> <br> Select `OK`,  *Enter*.<br> ![](../.gitbook/assets/image%20(11).png)
+
+2. Apasă orice tastă repede
+
+    ```
+    Shim UEFI key management
+    Press any key to perform MOK management
+    Booting in 5 seconds
+    ```
+
+3. Selectează `Enroll hash from disk`, *Enter*.
+
+    ```
+    Perform MOK management
+
+    Continue to boot
+    Enroll key from disk
+    Enroll hash from disk
+    ```
+
+4. Selectează primul disk, *Enter*. (**Nu selecta "MyAsus"!!**)
+
+    ```
+    Select Binary
+
+    The Selected Binary will have its hash Enrolled
+    This means it will subsequently Boot with no prompting
+    Remember to make sure it is a genuine binary before enrolling its hash
+
+    +----------------+
+    | YOUR DISK NAME |
+    +----------------+
+    ```
+
+5. Selectează `EFI/`, *Enter*.
+
+    ```
+    +---------------+
+    |     EFI/      |
+    |    loader/    |
+    | vmlinuz-linux |
+    +---------------+
+    ```
+
+6. Selectează `HackBGRT/`, *Enter*.
+
+    ```
+    +------------+
+    |    ../     |
+    |   Boot/    |
+    | HackBGRT/  |
+    | Microsoft/ |
+    +------------+
+    ```
+
+7. Selectează `grubx64.efi`, *Enter*.
+
+    ```
+    +-----------------+
+    |       ../       |
+    |   grubx64.efi   |
+    |   loader.efi    |
+    |    mmx64.efi    |
+    | certificate.cer |
+    |   splash.bmp    |
+    |   config.txt    |
+    +-----------------+
+    ```
+
+8. Selectează `Continue`, *Enter*.
+
+    ```
+    [Enroll MOK]
+
+    +------------+
+    | View key 0 |
+    |  Continue  |
+    +------------+
+    ```
+
+9. Selectează `Yes`, *Enter*.
+
+    ```
+    Enroll the key(s)?
+
+    +-----+
+    | No  |
+    | Yes |
+    +-----+
+    ```
+
+10. Selectează `Reboot`, *Enter*.
+
+    ```
+    Perform MOK management
+
+    +-----------------------+
+    |        Reboot         |
+    | Enroll key from disk  |
+    | Enroll hash from disk |
+    +-----------------------+
+    ```
+
+{% hint style="success" %} Acum ești gata să dai boot! {% endhint %} {% endstep %} {% endstepper %}
+
+## # Modificare Instalație
+
+Dacă vrei să schimbi logo-ul, re-rulează **setup.exe** ca administrator și **apasă tasta F** pe tastatură ca să modifici instalația.
+
+Ține aminte să salvezi fișierul in paint!
+
+{% hint style="info" %} **Pentru troubleshooting** [**dă click aici.**](https://github.com/Metabolix/HackBGRT/tree/v2.5.2?tab=readme-ov-file#troubleshooting) {% endhint %}
+
+\
