@@ -19,7 +19,7 @@ layout:
 
 - Asigurați-vă că computerul dvs. bootează cu UEFI (foarte probabil că da)
 - Asigurați-vă că BitLocker este dezactivat sau găsiți cheia de recuperare.
-- Creați o copie de rezervă completă sau un disc de salvare înainte de a face modificări la sigla de boot Windows. Copia de rezervă sau discul de salvare vă ajută să restaurați Windows dacă ceva nu merge bine și nu puteți boota. {% endhint %}
+- Creați o copie de rezervă completă sau un disc de salvare înainte de a face modificări la sigla de boot Windows. Copia de rezervă sau discul de salvare vă ajută să restaurați Windows dacă ceva nu merge bine și nu puteți boota.
 
 ## # Instalare pentru prima oară
 
@@ -51,9 +51,9 @@ Pentru a schimba boot logo-ul, vom folosi o aplicație open-source numită HackB
 - Păstrați fundalul logo-ului negru, deoarece transparența nu este acceptată. Prin urmare, noul logo nu arată nelalocul său pe fundalul negru al ecranului de boot.
 - Imaginea nu trebuie să fie mai mare de 300 x 300 pixeli. Deși dimensiunea nu este o cerință strictă, aceasta garantează că nu veți întâmpina probleme la setarea noului logo de boot. {% endhint %}
 
-1. În Paint, dă click pe File &gt; Import from Canvas &gt; From file. Apoi, găsește imaginea pe care o vrei sa o setezi ca noul Boot Logo. Selectează-l it și click pe butonul Open.
+1. În Paint, dă click pe **File** > **Import from Canvas** > **From file**. From file. Apoi, găsește imaginea pe care o vrei sa o setezi ca noul Boot Logo. Selectează-l it și click pe butonul Open.
 2. Dacă vrei, poți da click pe butonul Resize.
-3. Odată ce ai terminat, click pe File &gt; Save pentru a salva fișierul. După salvare, Închide Paint.
+3. Odată ce ai terminat, click pe File, Save pentru a salva fișierul. După salvare, Închide Paint.
 4. Apasă orice tastă pentru a ieși command line-ul. {% endstep %}
 
 {% step %}
