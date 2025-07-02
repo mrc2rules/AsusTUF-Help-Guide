@@ -1,2 +1,0 @@
-# Schimbarea Boot Logo-ului
-
