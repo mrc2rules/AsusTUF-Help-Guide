@@ -17,6 +17,8 @@
 ## Repairing
 
 * [Before you start](repairing/before-you-start.md)
+* [Removing the backplate](repairing/removing-the-backplate/README.md)
+  * [Page 2](repairing/removing-the-backplate/page-2.md)
 
 ## Maintenance
 
