@@ -1,27 +1,12 @@
 ---
 icon: hand-wave
-cover: >-
-  https://www.amd.com/content/dam/amd/en/images/backgrounds/products/2201103-amd-advantage-laptop-asus-tuf-banner.jpg
+cover: .gitbook/assets/2B0B00 (10).png
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Welcome
 
-This guide provides troubleshooting steps, performance tips, and setup instructions for ASUS TUF devices **on Windows**. Find solutions to common issues and learn how to get the best experience from your new TUF Laptop.
+This guide provides troubleshooting steps, performance tips, and setup instructions for ASUS TUF devices **on Windows**. Find solutions to common issues and learn how to get the best experience from your new TUF Laptop.&#x20;
 
 For additional help or discussion, feel free to join our Discord or Reddit below
 

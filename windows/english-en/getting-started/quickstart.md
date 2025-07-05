@@ -6,7 +6,7 @@ icon: bullseye-arrow
 
 <div align="center" data-full-width="false"><figure><img src="../.gitbook/assets/image (19).png" alt="An Asus TUF Laptop" width="188"><figcaption></figcaption></figure></div>
 
-Welcome to the ASUS TUF community. Congratulations on your new device! This guide will help you get started.&#x20;
+Welcome to the Asus TUF community. Congratulations on your new device! This guide will help you get started.&#x20;
 
 ## 🪄 The Essentials
 
@@ -65,8 +65,6 @@ Unlike AC, which is buggy, bloated and RAM-heavy, GHelper runs in the background
 ### Head over to basics
 
 If you're done with all of these, proceed to [Broken link](broken-reference "mention") for more information on how to maintain your TUF laptop
-
-
 {% endstep %}
 {% endstepper %}
 

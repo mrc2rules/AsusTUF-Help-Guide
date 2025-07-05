@@ -1,17 +1,6 @@
 ---
 description: 'Note: This is a clean-install'
 icon: arrows-rotate-reverse
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: true
 ---
 
 # Installing Windows 11
@@ -32,7 +21,7 @@ All files on the drive you plan to install Windows to will be **deleted** if you
 
 {% stepper %}
 {% step %}
-## Creating installation media <a href="#creating-installation-media" id="creating-installation-media"></a>
+### Creating installation media <a href="#creating-installation-media" id="creating-installation-media"></a>
 
 There are two ways you can use to create an installation media. If you're new to this, you should probably use MCT (Media Creation Tool).&#x20;
 
@@ -90,7 +79,7 @@ Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside 
 {% endstep %}
 
 {% step %}
-## Boot into your USB <a href="#creating-installation-media" id="creating-installation-media"></a>
+### Boot into your USB <a href="#creating-installation-media" id="creating-installation-media"></a>
 
 Plug in the Windows USB installer and spam `Esc` when booting the laptop.&#x20;
 
@@ -98,7 +87,7 @@ Change the BIOS boot order to have USB media as the first priority (this can usu
 {% endstep %}
 
 {% step %}
-## Installing Windows <a href="#creating-installation-media" id="creating-installation-media"></a>
+### Installing Windows <a href="#creating-installation-media" id="creating-installation-media"></a>
 
 1. Click “Install now”
 
@@ -140,7 +129,7 @@ You have successfully installed Windows 11. Once the computer has rebooted, you 
 {% endstep %}
 
 {% step %}
-## Windows OOBE (Out Of the Box Experience)
+### Windows OOBE (Out Of the Box Experience)
 
 The laptop will boot into the OOBE setup. Please proceed according to the steps.&#x20;
 
@@ -148,7 +137,7 @@ You may or may not have WiFi at this stage. If so, please use an ethernet cable
 {% endstep %}
 
 {% step %}
-## Base Windows Setup
+### Base Windows Setup
 
 * **Windows Updates**\
   Open Windows Updates and update everything. Reboot when needed. Repeat until updates are gone.\

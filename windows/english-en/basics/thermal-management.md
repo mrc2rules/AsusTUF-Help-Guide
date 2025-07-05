@@ -1,20 +1,6 @@
 ---
 icon: temperature-list
 coverY: 0
-layout:
-  cover:
-    visible: false
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: true
 ---
 
 # Thermal Management
@@ -27,10 +13,10 @@ This section covers key cooling solutions, recommended settings, and best practi
 
 <summary><mark style="color:blue;">New? Click here for frequently asked questions</mark></summary>
 
-_<mark style="color:orange;">**Are there any good custom fan curves? Should I use my own?**</mark>_ \
+<mark style="color:orange;">**Are there any good custom fan curves? Should I use my own?**</mark> \
 \- No, you don't need to change the fan curves; the defaults are perfectly fine.
 
-_<mark style="color:orange;">**Are there any good GHelper/Armory Crate presets?**</mark>_ \
+<mark style="color:orange;">**Are there any good GHelper/Armory Crate presets?**</mark> \
 \- No, you don't need add any "presets"; the defaults are perfectly fine.
 
 </details>
@@ -43,8 +29,8 @@ _-_ As long as the it doesn't hit Max Temps (below), it's perfectly fine; the ch
 
 | Component | Idle Temp   | Usual Load Temp | Max Temp Range ⚠️ |
 | --------- | ----------- | --------------- | ----------------- |
-| **CPU**   | 40°C - 60°C | 80°C - 90°C     | 95-100°C          |
-| **GPU**   | 30°C - 50°C | 70°C - 80°C     | 85-90°C           |
+| **CPU**   | 40°C - 60°C | 80°C - 90°C     | 95°C - 100°C      |
+| **GPU**   | 30°C - 50°C | 70°C - 80°C     | 85°C - 90°C       |
 
 \
 There are safety mechanisms in place, and it will automatically throttle if it reaches dangerous temps. Refer to [#the-essentials](thermal-management.md#the-essentials "mention") & [#additional-steps](thermal-management.md#additional-steps "mention") below to lower temps further.

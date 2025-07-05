@@ -2,20 +2,6 @@
 icon: g
 cover: ../.gitbook/assets/241183841-4d98465a-63a5-4498-ae14-afb3e67e7e82.png
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Installing GHelper
@@ -51,7 +37,7 @@ Make sure to extract GHelper/AC uninstaller from the zip file before running it.
 
 Stop all asus services from `Extra` -> `Stop services`. Or stop `ArmouryCrateControlInterface` under windows Services app
 
-### How does G-helper control my fan speeds?
+### How does GHelper control my fan speeds?
 
 **It doesn't and can't control your fans**. Firmware / BIOS controls them in real-time. Armoury also doesn't control fans in real time anyhow.
 

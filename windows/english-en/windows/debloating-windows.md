@@ -1,16 +1,5 @@
 ---
 icon: broom-wide
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: true
 ---
 
 # Debloating Windows
@@ -21,7 +10,7 @@ Bloatware refers to pre-installed or unnecessary software that offers little val
 
 Manufacturers include these apps to promote their services or generate revenue, but they usually consume memory, storage, and battery life.
 
-### Why Remove Bloatware?
+## Why Remove Bloatware?
 
 1. Improves performance by reducing background processes.
 2. Frees up storage.
@@ -32,7 +21,7 @@ Manufacturers include these apps to promote their services or generate revenue, 
 
 {% stepper %}
 {% step %}
-## Clean Install (Alternative Option)
+### Clean Install (Alternative Option)
 
 If possible, perform a clean installation of Windows. It’s the most effective way to remove pre-installed junk. It resets your system and wipes out all manufacturer bloat.
 
@@ -40,7 +29,7 @@ If possible, perform a clean installation of Windows. It’s the most effective 
 {% endstep %}
 
 {% step %}
-## Remove pre-installed applications
+### Remove pre-installed applications
 
 This guide will be using the Windows debloat script by [Win11Debloat by Raphire](https://github.com/Raphire/Win11Debloat).
 
@@ -71,7 +60,7 @@ Once it finishes:
 {% endstep %}
 
 {% step %}
-## Uninstall 3rd-party antivirus software
+### Uninstall 3rd-party antivirus software
 
 _**But wait, don’t I need an antivirus?**_\
 No, not anymore. \
@@ -86,7 +75,7 @@ To remove them, use these official removal tools:
 {% endstep %}
 
 {% step %}
-## Disabling Unnecessary Services (Advanced Tweaks)
+### Disabling Unnecessary Services (Advanced Tweaks)
 
 We’ll use the **CTT Tool** ([Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)), which provides a clean GUI for installing apps, disabling services, and applying tweaks.
 

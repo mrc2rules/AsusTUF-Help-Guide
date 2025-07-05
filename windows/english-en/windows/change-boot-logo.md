@@ -1,16 +1,5 @@
 ---
 icon: rectangle-vertical-history
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: true
 ---
 
 # Change Boot Logo
@@ -28,7 +17,7 @@ If you mess up the installation, your system may become unbootable! This softwar
 
 {% stepper %}
 {% step %}
-## Download "HackBGRT"
+### Download "HackBGRT"
 
 To change the boot logo, we will use an open-source application called HackBGRT. Here’s how to use it.
 
@@ -38,7 +27,7 @@ To change the boot logo, we will use an open-source application called HackBGRT.
 {% endstep %}
 
 {% step %}
-## Using HackBGRT
+### Using HackBGRT
 
 1. Open the extracted folder, right-click on the **setup.exe** file, and select the **Run as administrator**\
    \
@@ -55,7 +44,7 @@ To change the boot logo, we will use an open-source application called HackBGRT.
 {% endstep %}
 
 {% step %}
-## Setting the logo
+### Setting the logo
 
 {% hint style="info" %}
 **Note:**
@@ -72,7 +61,7 @@ To change the boot logo, we will use an open-source application called HackBGRT.
 {% endstep %}
 
 {% step %}
-## Rebooting / Secure Boot Instructions
+### Rebooting / Secure Boot Instructions
 
 Since Secure Boot only accepts trusted files during boot, HackBGRT comes with the _shim_ boot loader, a tool which allows you to manually select HackBGRT as a trusted program.&#x20;
 
@@ -202,9 +191,9 @@ You are now ready to boot!
 {% endstep %}
 {% endstepper %}
 
-## # Modifying Installation
+## Modifying Boot Logo Afterwards
 
-If you want to change the logo, rerun **setup.exe** as administrator and **press the F key** on your keyboard to modify the installation.
+If you want to change the logo later, rerun **setup.exe** as administrator and **press the F key** on your keyboard to modify the installation.
 
 Remember to save the file in paint!
 

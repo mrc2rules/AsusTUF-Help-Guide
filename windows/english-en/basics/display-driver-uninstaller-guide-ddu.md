@@ -1,16 +1,5 @@
 ---
 icon: microchip
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: true
 ---
 
 # Display Driver Uninstaller Guide (DDU)
@@ -42,7 +31,7 @@ If you don't do this, you'll get a black screen after deleting the driver, requi
 
 {% stepper %}
 {% step %}
-## Download official drivers
+### Download official drivers
 
 Download the newest drivers for your GPU from the manufacturer's website.&#x20;
 
@@ -57,7 +46,7 @@ Save the driver installer on your desktop for easier access later. Preferably yo
 {% endstep %}
 
 {% step %}
-## Install DDU
+### Install DDU
 
 This software will completely uninstall everything related to your driver without leaving any trace of it, allowing you to fresh install new drivers.
 
@@ -67,7 +56,7 @@ Portable mode is easier,  just extract it to an empty folder on your desktop.
 {% endstep %}
 
 {% step %}
-## Preparing for DDU
+### Preparing for DDU
 
 1. Remove your internet connection completely (WiFi or ethernet). This prevents Windows from auto installing a GPU driver by itself through Windows Updates.
 2. Open DDU, then on the top left open the `Options` menu,&#x20;
@@ -78,7 +67,7 @@ Portable mode is easier,  just extract it to an empty folder on your desktop.
 {% endstep %}
 
 {% step %}
-## Using DDU
+### Using DDU
 
 1. Once you're in DDU, there should be 2 drop-down menus on the right side, \
    `-Select device type-` and `-Select device-`\
