@@ -1,5 +1,7 @@
 ---
 icon: microchip
+cover: ../.gitbook/assets/7.png
+coverY: 0
 ---
 
 # Display Driver Uninstaller Guide (DDU)

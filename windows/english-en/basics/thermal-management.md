@@ -1,5 +1,6 @@
 ---
 icon: temperature-list
+cover: ../.gitbook/assets/4.png
 coverY: 0
 ---
 

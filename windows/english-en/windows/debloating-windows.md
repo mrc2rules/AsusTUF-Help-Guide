@@ -1,5 +1,7 @@
 ---
 icon: broom-wide
+cover: ../.gitbook/assets/10.png
+coverY: 0
 ---
 
 # Debloating Windows

@@ -1,5 +1,7 @@
 ---
 icon: battery-bolt
+cover: ../.gitbook/assets/5.png
+coverY: 0
 ---
 
 # Battery & Power

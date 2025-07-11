@@ -1,5 +1,7 @@
 ---
 icon: rectangle-vertical-history
+cover: ../.gitbook/assets/11.png
+coverY: 0
 ---
 
 # Change Boot Logo

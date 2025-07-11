@@ -1,5 +1,7 @@
 ---
 icon: microchip
+cover: ../.gitbook/assets/6.png
+coverY: 0
 ---
 
 # GPU Performance Optimization

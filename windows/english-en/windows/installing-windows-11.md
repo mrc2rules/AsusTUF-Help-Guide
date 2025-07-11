@@ -1,6 +1,8 @@
 ---
 description: 'Note: This is a clean-install'
 icon: arrows-rotate-reverse
+cover: ../.gitbook/assets/9.png
+coverY: 0
 ---
 
 # Installing Windows 11
