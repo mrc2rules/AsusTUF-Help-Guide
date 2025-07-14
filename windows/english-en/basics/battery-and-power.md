@@ -78,9 +78,14 @@ Additionally, stop all Asus services via GHelper (Extra > Other > Stop)
 This helps battery life as it doesn't boost anymore and less power is drawn. There are two ways to do this. Easiest way is via GHelper.
 
 {% hint style="info" %}
-Do not disable if you rely on intensive CPU bound applications. Try testing and see if you have a significant performance hit and if it's worth the drop.
+Do not disable if&#x20;
 
-Most games get very little FPS benefit for a massive thermal increase. (eg: 1/2FPS for 20C inc)
+* You play competitive multiplayer games (Valorant/CS)
+* Rely on intensive CPU bound applications (Video Editing/Coding/Rendering)
+
+Test and see if you have a significant hit or if it's worth the drop.
+
+Most singleplayer games get very little FPS benefit for a massive thermal increase. (eg: 1/2FPS for 20C inc)
 {% endhint %}
 
 {% tabs %}
