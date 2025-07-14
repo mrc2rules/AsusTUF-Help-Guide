@@ -24,6 +24,9 @@
 
 * [Cleaning Your Laptop](maintenance/cleaning-your-laptop.md)
 
+## Misc.
+* [Managing paging memory.](misc/managing-paging-memory.md)
+
 ## Windows
 
 * [Installing Windows 11](windows/installing-windows-11.md)
