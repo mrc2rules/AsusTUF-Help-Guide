@@ -44,9 +44,9 @@ There are safety mechanisms in place, and it will automatically throttle if it r
 {% step %}
 ### Elevate the back of your laptop
 
-Use a laptop stand/book or even your charging brick to keep the laptop slightly elevated from the back. For even better cooling, try to [#use-a-cooling-pad](thermal-management.md#use-a-cooling-pad "mention").
+Use a laptop stand/book or even your charging brick to keep the laptop slightly elevated from the back. For better cooling, try to [#use-a-cooling-pad](thermal-management.md#use-a-cooling-pad "mention").
 
-This is to ensure proper ventilation and for proper cooling. Try not to block any vents
+Additionally, try not to block any vents
 {% endstep %}
 
 {% step %}
@@ -90,7 +90,7 @@ Keep in mind most low-cost or generic coolers simply blow air instead of properl
 {% endhint %}
 
 {% hint style="info" %}
-#### If you have a larger 16'' or 17'' device, make sure the cooler you buy is appropriately sized
+If you have a larger 16'' or 17'' device, make sure the cooler you buy is appropriately sized
 {% endhint %}
 
 Some recommendations:&#x20;
@@ -109,7 +109,7 @@ This helps lower temps significantly. There are two ways to do this. Easiest way
 {% hint style="info" %}
 **Note:**
 
-Do not disable if&#x20;
+Do not disable if:
 
 * You play competitive multiplayer games (Valorant/CS)
 * Rely on intensive CPU bound applications (Video Editing/Coding/Rendering)
