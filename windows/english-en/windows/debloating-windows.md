@@ -34,6 +34,7 @@ If possible, perform a clean installation of Windows. It’s the most effective 
 ### Remove pre-installed applications
 
 This guide utilizes the [Win11Debloat](https://github.com/Raphire/Win11Debloat) PowerShell script created by Raphire.
+
 It can remove pre-installed bloatware apps, disable telemetry, remove intrusive interface elements and much more. To see a list of what's removed by default, [click here](https://github.com/Raphire/Win11Debloat#default-settings).\
 
 
