@@ -95,10 +95,10 @@ If you have a larger 16'' or 17'' device, make sure the cooler you buy is approp
 
 Some recommendations:&#x20;
 
-1. IETS GT500
-2. LLANO v10/v12
-3. KLIM Everest&#x20;
-4. Zebronics NC9200
+1. LLANO v10/v12
+2. IETS GT500
+3. Flydigi
+4. KLIM Everest&#x20;
 {% endstep %}
 
 {% step %}

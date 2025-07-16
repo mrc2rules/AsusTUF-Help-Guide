@@ -52,7 +52,7 @@ Save the driver installer on your desktop for easier access later. Preferably yo
 
 This software will completely uninstall everything related to your driver without leaving any trace of it, allowing you to fresh install new drivers.
 
-&#x20;[https://www.wagnardsoft.com/forums/viewtopic.php?t=5092](https://www.wagnardsoft.com/forums/viewtopic.php?t=5092)&#x20;
+[https://www.wagnardsoft.com/display-driver-uninstaller-DDU-](https://www.wagnardsoft.com/display-driver-uninstaller-DDU-)
 
 Portable mode is easier,  just extract it to an empty folder on your desktop.
 {% endstep %}
@@ -77,7 +77,7 @@ Portable mode is easier,  just extract it to an empty folder on your desktop.
    Under the first menu, **select the GPU option**\
    Under the second one, **select the GPU driver you want to uninstall.**&#x20;
 2. Then press `clean and restart`, wait until it automatically restarts.&#x20;
-3. Once it restarts, install the GPU driver you downloaded earlier, after it finishes the installation, restart your laptop and re enable the internet.
+3. Once it restarts, install the GPU driver you downloaded earlier. After it finishes the installation, restart your laptop and re enable the internet.
 {% endstep %}
 {% endstepper %}
 
