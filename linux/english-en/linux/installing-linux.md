@@ -152,9 +152,13 @@ Some hotkeys are BIOS-level and can’t be remapped.
 
 ## Step 4: Power Management
 
-If you notice that your battery life on Linux is significantly shorter compared to Windows, you may benefit from additional power management tools. Two of the most commonly recommended options are **TLP** and **CPU AutoFreq**. These tools help optimize power usage, particularly on laptops, by dynamically adjusting CPU frequencies and managing various power-related settings.
+If battery life on Linux feels worse than on Windows, you might want to try out some power management tools. These tools automatically handle system power, whether you're on battery or plugged in, by adjusting CPU frequencies and other power settings.
 
-{% hint style="warning" %} **Important**: Only install **one** of these tools. Running both simultaneously can cause conflicts and lead to unexpected behavior. {% endhint %}
+Two of the best tools for this are TLP and CPU AutoFreq. Personally, I’ve found CPU AutoFreq to work better, but this can vary depending on your laptop and how you use it. You can try either one to see which gives better results for your setup.
+
+{% hint style="warning" %}
+Important: Only install one of these tools. Running both simultaneously can cause conflicts and lead to unexpected behavior.
+{% endhint %}
 
 ### 4.1 TLP
 
@@ -176,6 +180,10 @@ sudo systemctl start tlp
 {% hint style="info" %} TLP conflicts with power-profiles-daemon. Remove it or mask its service:
 
 ```bash
+# To remove it:
+sudo dnf remove  power-profiles-daemon
+
+#To mask it:
 systemctl mask power-profiles-daemon.service
 ```
 
@@ -185,7 +193,7 @@ systemctl mask power-profiles-daemon.service
 
 CPU AutoFreq is a real-time CPU frequency and power optimizer. It monitors your system load, battery level, and temperature to dynamically manage CPU scaling for better battery life.
 
-**Manual Install:**
+**Installation:**
 
 ```bash
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git && cd auto-cpufreq && sudo ./auto-cpufreq-installer
