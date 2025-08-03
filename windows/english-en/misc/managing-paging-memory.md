@@ -1,23 +1,3 @@
----
-icon: 
-cover: 
-coverY: 0
-layout:
-  width: default
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: false
-  description: "By Scotty, taken from r/asustuf Discord"
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
 
 # Managing Paging Memory.
 
