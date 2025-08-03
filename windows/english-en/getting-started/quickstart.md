@@ -2,21 +2,6 @@
 icon: bullseye-arrow
 cover: ../.gitbook/assets/3.png
 coverY: 0
-layout:
-  width: default
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: false
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Quickstart

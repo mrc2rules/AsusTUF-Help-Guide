@@ -16,6 +16,12 @@
   * [Additional Tweaks](basics/performance-optimization/additional-tweaks.md)
 * [Display Driver Uninstaller Guide (DDU)](basics/ddu.md)
 
+## Windows
+
+* [Installing Windows 11](windows/installing-windows-11.md)
+* [Debloating Windows](windows/debloating-windows.md)
+* [Change Boot Logo](windows/change-boot-logo.md)
+
 ## Repairing
 
 * [Before you start](repairing/before-you-start.md)
@@ -26,11 +32,6 @@
 
 * [Cleaning Your Laptop](maintenance/cleaning-your-laptop.md)
 
-## Misc.
-* [Managing paging memory.](misc/managing-paging-memory.md)
+## Miscellaneous
 
-## Windows
-
-* [Installing Windows 11](windows/installing-windows-11.md)
-* [Debloating Windows](windows/debloating-windows.md)
-* [Change Boot Logo](windows/change-boot-logo.md)
+* [Managing paging memory](miscellaneous/managing-paging-memory.md)
