@@ -8,8 +8,8 @@ Want to contribute? Read below!
 2. [Guidelines](#guidelines)
     1. [Language](#language)
     2. [Markdown](#markdown)
-3. [Creating a new page](#newpage)
-4. [Contribute to an existing page](#oldpage)
+3. [Contribute to an existing page](#oldpage)
+4. [Creating a new page](#newpage)
 
 ## Introduction
 
@@ -31,15 +31,21 @@ Please ensure that all written content:
 
 ### Markdown <a name="markdown"></a>
 
-Please ensure all written content follows [standard Markdown syntax](https://www.markdownguide.org/basic-syntax/). 
+Please ensure all content:
+- Follows [standard Markdown syntax](https://www.markdownguide.org/basic-syntax/).
+- **Passes GitBook checks.**
 
 If you prefer a visual markdown editing experience, you can use
 - https://pandao.github.io/editor.md/en.html (Recommended)
 - https://readme.so/editor
+  
+## Contribute to an existing page <a name="oldpage"></a>
 
+- Follow the steps as mentioned in [#Introduction](#introduction) and [#Guidelines](#guidelines)
+  
 ## Creating a new page <a name="newpage"></a>
 
-After proofreading your newly written content and ensuring it follows proper markdown standards, include the following code at the top of your page.
+After proofreading your newly written content and ensuring it follows proper markdown standards, include the following code at the top of your page. Avoid adding anything else at the top.
 ```
 ---
 hidden: true
@@ -47,6 +53,7 @@ hidden: true
 ```
 This is required because pages need to be manually reviewed and properly formatted via the GitBook visual editor. GitBook’s visual editor supports various content blocks that help the content look clean, organized, and visually appealing. 
 
+---
 > [!IMPORTANT]
 > You'll need to add your page to the `SUMMARY.md` file so that it displays on the site's table of contents.
 > 
@@ -83,6 +90,4 @@ If none of the groups are suitable for your content, you may add a new group by 
 > `* [Quickstart](getting-started/quickstart.md)` ✅
 >
 
-## Contribute to an existing page <a name="oldpage"></a>
-
-lorem ipsum
+Finally, please tag @mrc2rules in your PR request for review. As a reminder, this should be done when new pages are created **only.**
