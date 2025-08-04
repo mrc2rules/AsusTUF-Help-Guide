@@ -132,4 +132,49 @@ BSODs or crashes are normal. Don't worry. If you need additional help or can't f
 [https://discord.com/invite/g6exUXvWge](https://discord.com/invite/g6exUXvWge)
 {% endhint %}
 {% endstep %}
+
+{% step %}
+### Automatically close apps on battery (Advanced)
+
+When you switch to battery, some power hungry apps such as Discord and Nvidia Broadcast may remain open in the background, consuming battery.
+
+This section of the guide shows you how you can automatically exit such apps.\
+
+
+1. Download the `files.zip` from releases. ([Click here](https://github.com/mrc2rules/CloseAppsOnBattery/releases/tag/v1.0))
+2. **Extract the ZIP archive** to any folder
+3. Open search and type `Task Scheduler`
+4.  On the right-hand panel, click **`Import Task…`** \
+    Then select `CloseAppsOnBattery.xml` from the folder you extracted.
+
+    <div align="left"><figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure></div>
+
+
+5.  In the imported task, go to the **`Actions`** tab → Select the listed action → Click **`Edit`**
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+
+6.  Then, \
+    In **`Start in`  -** Paste the directory where you extracted the zip files.
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (2).png" alt="" width="284"><figcaption></figcaption></figure></div>
+
+
+
+{% hint style="success" %}
+**That's it!**
+
+Currently, the script only closes: \
+Discord, Steam, EpicGamesLauncher, NvidiaBroadcast\
+\
+More will be added soon.
+{% endhint %}
+
+{% hint style="info" %}
+If you wish to add apps yourself, open `CloseAppsOnBattery.bat` with Notepad and then add this line under the existing taskkill entries.
+
+`taskkill /IM NAMEOFPROGRAM.exe /F`
+{% endhint %}
+{% endstep %}
 {% endstepper %}

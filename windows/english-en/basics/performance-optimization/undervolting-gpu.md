@@ -83,7 +83,7 @@ Then, open GPU-Z and head to the `Sensors` tab. \
 Note your `GPU Clock` and`GPU Voltage` values (should be ≥ \~0.975v).\
 \
 Keep note of the `GPU Temperature`\
-&#x20;<img src="../../.gitbook/assets/image.png" alt="" data-size="original">
+&#x20;<img src="../../.gitbook/assets/image (3).png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
@@ -106,7 +106,7 @@ These are your stock values. (_In my case_, 1.01v & \~2500Mhz as highlighted in 
 {% step %}
 Next, go down by 25mv and click that point. (_In my case,_ that would be 0.975v )
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -124,7 +124,7 @@ Next, again, **hold shift, select the entire region to the right of your value**
 It should look like this:\
 
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
