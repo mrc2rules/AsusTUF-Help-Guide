@@ -11,7 +11,7 @@ Want to contribute? Read below!
 3. [Contribute to an existing page](#oldpage)
 4. [Creating a new page](#newpage)
 
-## Introduction
+# Introduction
 
 - If you just wish to offer suggestions and ideas, you can:
    - [Create a new GitHub issue](https://github.com/mrc2rules/AsusTUF-Help-Guide/issues/new)
@@ -21,15 +21,15 @@ Want to contribute? Read below!
   - [Fork this repository](https://github.com/mrc2rules/AsusTUF-Help-Guide/fork) and create a pull request.
   
 
-## Guidelines <a name="guidelines"></a>
+# Guidelines <a name="guidelines"></a>
 
-### Language <a name="language"></a>
+## Language <a name="language"></a>
 
 Please ensure that all written content:
 - Follows standard grammar and writing conventions for the target language. 
 - Uses professional, clear, and easy-to-understand language while avoiding slang or regional idioms unless context requires it. 
 
-### Markdown <a name="markdown"></a>
+## Markdown <a name="markdown"></a>
 
 Please ensure all content:
 - Follows [standard Markdown syntax](https://www.markdownguide.org/basic-syntax/).
@@ -39,11 +39,11 @@ If you prefer a visual markdown editing experience, you can use
 - https://pandao.github.io/editor.md/en.html (Recommended)
 - https://readme.so/editor
   
-## Contribute to an existing page <a name="oldpage"></a>
+# Contribute to an existing page <a name="oldpage"></a>
 
 - Follow the steps as mentioned in [#Introduction](#introduction) and [#Guidelines](#guidelines)
   
-## Creating a new page <a name="newpage"></a>
+# Creating a new page <a name="newpage"></a>
 
 After proofreading your newly written content and ensuring it follows proper markdown standards, include the following code at the top of your page. Avoid adding anything else at the top.
 ```
