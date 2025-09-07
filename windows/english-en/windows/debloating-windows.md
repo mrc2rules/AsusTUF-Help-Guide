@@ -8,16 +8,17 @@ coverY: 0
 
 ## What is bloatware?
 
-Bloatware refers to pre-installed or unnecessary software that offers little value and often slows down your system.
+Bloatware is preinstalled software that consumes system resources or storage without providing meaningful value to the user. It can slow down your device, change settings automatically, display unwanted ads, and even create security vulnerabilities.
 
-Manufacturers include these apps to promote their services or generate revenue, but they usually consume memory, storage, and battery life.
+Manufacturers often include these apps to promote their services or generate revenue, but they typically drain memory, storage, and battery life while cluttering the system.
 
 ## Why Remove Bloatware?
 
-1. Improves performance by reducing background processes.
-2. Frees up storage.
-3. Extends battery life.
-4. Reduces security risks from outdated or unused apps.
+Removing bloatware can:
+1. Improve performance by reducing background processes.
+2. Free up storage space.
+3. Extend battery life.
+4. Reduce security risks from outdated or unused apps.
 
 ## Steps
 
@@ -62,11 +63,14 @@ Once it finishes:
 
 {% step %}
 #### Uninstall 3rd-party antivirus software
+<details>
+<summary><b>Don't I need an antivirus?</b></summary>
 
-_**But wait, don’t I need an antivirus?**_\
-No, not anymore.\
-In 2025, you don’t need 3rd-party antivirus software, especially not McAfee or Norton. They slow down systems, sell user data, and provide subpar protection.\
-\
+No, not anymore.  
+In 2025, you don’t need third-party antivirus software, especially not McAfee or Norton. They can slow down your system, sell user data, and provide subpar protection.
+
+</details>
+
 **Windows Security (Windows Defender)** comes pre-installed with Windows. It's lightweight, effective, and more than enough for most users. As long as you avoid sketchy downloads and use common sense online, you're covered.
 
 To remove them, use these official removal tools:
@@ -76,6 +80,7 @@ To remove them, use these official removal tools:
 {% endstep %}
 
 {% step %}
+
 #### Disabling Unnecessary Services (Advanced Tweaks)
 
 We’ll use the **CTT Tool** ([Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)), which provides a clean GUI for installing apps, disabling services, and applying tweaks.
