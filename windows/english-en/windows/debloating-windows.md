@@ -6,6 +6,12 @@ coverY: 0
 
 # Debloating Windows
 
+{% hint style="warning" %}
+**Warning:**
+
+Debloating and applying certain tweaks to Windows may break the installation, requiring a full clean install. Proceed at your own risk.
+{% endhint %}
+
 ## What is bloatware?
 
 Bloatware is preinstalled software that consumes system resources or storage without providing meaningful value to the user. It can slow down your device, change settings automatically, display unwanted ads, and even create security vulnerabilities.
