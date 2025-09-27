@@ -29,7 +29,7 @@
 |------------------------|---------|-------|
 | English (en-US)        |   ✅    |  ✅   |
 | Romanian (ro-RO)       |   ⌛    |  ❌   |
-| German (de-DE)         |   ⌛    |  ❌   |
+| German (de-DE)         |   ❌    |  ❌   |
 
 ## Contributing
 
