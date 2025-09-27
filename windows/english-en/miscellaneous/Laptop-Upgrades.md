@@ -1,3 +1,7 @@
+---
+icon: memory
+---
+
 # Laptop Upgrades
 
 Want to upgrade your laptop but not sure what to get or what’s compatible? Just follow this guide, and you should find exactly what you're looking for.
