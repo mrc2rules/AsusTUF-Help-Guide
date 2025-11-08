@@ -28,6 +28,7 @@ All files on the drive you plan to install Windows to will be **deleted** if you
 There are two ways you can use to create an installation media. If you're new to this, you should probably use MCT (Media Creation Tool).&#x20;
 
 Rufus is another choice for advanced users with a lot more configurable options for your installation.
+
 Ventoy is also a choice for advanced users who want to manage all their ISOs into one singular drive.
 
 {% tabs %}
