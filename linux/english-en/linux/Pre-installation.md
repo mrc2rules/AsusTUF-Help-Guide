@@ -64,7 +64,7 @@ These are desktop environments that define the look and feel of your system inte
 ## Create bootable media
 
 {% tabs %}
-{% tab title="Using Rufus" %}
+{% tab title=" Using Rufus" %}
 1. Download and run [Rufus](https://rufus.ie/).
 2. Select “ISO Image” and then browse for the ISO image.
 3. Select the flash drive you want to put the installer on.
@@ -73,9 +73,29 @@ These are desktop environments that define the look and feel of your system inte
 6. Eject the USB flash drive.
 {% endtab %}
 
-{% tab title="Using Ventoy" %}
-Simply copy the ISO to the USB drive if Ventoy is already installed.
+
+{% tab title=" Using Ventoy" %}
+
+{% hint style="danger" %}
+**Caution**
+
+While Ventoy does support secure boot, there is a chance that it wont work. For this, you will have to refer to their [troubleshooting guide](https://www.ventoy.net/en/doc_secure.html). If you don't want to enroll the MOK keys, simply turn off Secure Boot.
+
+{% endhint %}
+
+1. Download the .zip of [Ventoy](https://www.ventoy.net/en/download.html) and extract it
+2. Run the `Ventoy2Disk.exe` program
+3. Select your drive and press `Install`. It should look like this.
+<div align="left"><figure><img src="../.gitbook/assets/ventoy_before_flash.png" alt="" width="337"><figcaption></figcaption></figure></div>
+4. After flash, the right box should have the same numbers as the one in the left.
+<div align="left"><figure><img src="../.gitbook/assets/ventoy_after_flash.png" alt="" width="337"><figcaption></figcaption></figure></div>
+5. Then copy the Windows ISO to the root of VENTOY, not VTOYEFI!
+<div align="left"><figure><img src="../.gitbook/assets/ventoy_drives.png" alt="" width="437"><figcaption></figcaption></figure></div>
+6. Restart your computer and boot into Ventoy. If successful, Fedora (and other ISOs you have copied to) should appear here!
+<div align="left"><figure><img src="../.gitbook/assets/ventoy_uefi.png" alt="" width="475"><figcaption></figcaption></figure></div>
+
 {% endtab %}
+
 {% endtabs %}
 {% endstep %}
 
