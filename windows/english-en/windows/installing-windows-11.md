@@ -78,9 +78,11 @@ This step will wipe the selected USB Flash drive, so ensure you have nothing imp
 3. If you have multiple drives inserted, select the one you desire.
 3. Select `ISO Image` and then browse for the Windows ISO image. It should then look like this:
 <div align="left"><figure><img src="../.gitbook/assets/rufus_win_main.png" alt="" width="375"><figcaption></figcaption></figure></div>
+
 5. Select the Partition scheme (GPT/MBR) depending on your motherboard’s capabilities.
 6. Click `Start`. You will now see a couple of options. If you don't know what they do, leave them as is.
 <div align="left"><figure><img src="../.gitbook/assets/rufus_win_options.png" alt="" width="575"><figcaption></figcaption></figure></div>
+
 7. Eject the USB flash drive and then restart. You should now be able to boot into your newly flashed drive!
 {% endtab %}
 
@@ -98,10 +100,13 @@ While Ventoy does support secure boot, there is a chance that it wont work for o
 3. Run the `Ventoy2Disk.exe` program
 3. Select your drive and press `Install`. It should look like this.
 <div align="left"><figure><img src="../.gitbook/assets/ventoy_before_flash.png" alt="" width="337"><figcaption></figcaption></figure></div>
+
 4. After flash, the right box should have the same numbers as the one in the left.
 <div align="left"><figure><img src="../.gitbook/assets/ventoy_after_flash.png" alt="" width="337"><figcaption></figcaption></figure></div>
+
 5. Then copy the Windows ISO to the root of VENTOY, not VTOYEFI!
 <div align="left"><figure><img src="../.gitbook/assets/ventoy_drives.png" alt="" width="437"><figcaption></figcaption></figure></div>
+
 6. Restart your computer and boot into Ventoy. If successful, Windows (and other ISOs you have copied to) should appear here!
 <div align="left"><figure><img src="../.gitbook/assets/ventoy_uefi.png" alt="" width="475"><figcaption></figcaption></figure></div>
 
