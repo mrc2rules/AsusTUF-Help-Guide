@@ -80,7 +80,7 @@ This step will wipe the selected USB Flash drive, so ensure you have nothing imp
 <div align="left"><figure><img src="../.gitbook/assets/rufus_win_main.png" alt="" width="375"><figcaption></figcaption></figure></div>
 5. Select the Partition scheme (GPT/MBR) depending on your motherboard’s capabilities.
 6. Click `Start`. You will now see a couple of options. If you don't know what they do, leave them as is.
-<div align="left"><figure><img src="../.gitbook/assets/rufus_win_options.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/rufus_win_options.png" alt="" width="575"><figcaption></figcaption></figure></div>
 7. Eject the USB flash drive and then restart. You should now be able to boot into your newly flashed drive!
 {% endtab %}
 
