@@ -27,7 +27,8 @@ All files on the drive you plan to install Windows to will be **deleted** if you
 
 There are two ways you can use to create an installation media. If you're new to this, you should probably use MCT (Media Creation Tool).&#x20;
 
-Rufus is another choice for advanced users with a lot more configurable options for your installation
+Rufus is another choice for advanced users with a lot more configurable options for your installation.
+Ventoy is also a choice for advanced users who want to manage all their ISOs into one singular drive.
 
 {% tabs %}
 {% tab title="Microsoft Media Creation Tool" %}
@@ -70,7 +71,7 @@ This step will wipe the selected USB Flash drive, so ensure you have nothing imp
 8. After MCT finishes, shutdown your PC.
 {% endtab %}
 
-{% tab title="Rufus" %}
+{% tab title=" Rufus" %}
 1. Download the [Windows Multi Edition ISO from here](https://www.microsoft.com/en-us/software-download/windows11)
 2. Download and run [Rufus](https://rufus.ie/).
 3. Select “ISO Image” and then browse for the ISO image.
@@ -80,7 +81,7 @@ This step will wipe the selected USB Flash drive, so ensure you have nothing imp
 7. Eject the USB flash drive.
 {% endtab %}
 
-{% tab title="Ventoy" %}
+{% tab title=" Ventoy" %}
 
 {% hint style="danger" %}
 **Caution**

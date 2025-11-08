@@ -64,7 +64,7 @@ These are desktop environments that define the look and feel of your system inte
 ## Create bootable media
 
 {% tabs %}
-{% tab title="Using Rufus" %}
+{% tab title=" Using Rufus" %}
 1. Download and run [Rufus](https://rufus.ie/).
 2. Select “ISO Image” and then browse for the ISO image.
 3. Select the flash drive you want to put the installer on.
@@ -73,11 +73,8 @@ These are desktop environments that define the look and feel of your system inte
 6. Eject the USB flash drive.
 {% endtab %}
 
-{% tab title="Using Ventoy" %}
-Simply copy the ISO to the USB drive if Ventoy is already installed.
-{% endtab %}
 
-{% tab title="Ventoy" %}
+{% tab title=" Using Ventoy" %}
 
 {% hint style="danger" %}
 **Caution**
