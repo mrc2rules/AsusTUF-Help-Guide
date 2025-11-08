@@ -57,7 +57,8 @@ Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside 
 {% hint style="danger" %}
 **Caution**
 
-This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
+
+This step will wipe the selected USB Flash drive, so ensure you have nothing important on the USB drive, and back up all important documents.
 {% endhint %}
 
 <div align="left"><figure><img src="../.gitbook/assets/image (30).png" alt="" width="375"><figcaption></figcaption></figure></div>
@@ -70,12 +71,36 @@ Save MCT to Desktop or Downloads folder. MCT must be saved and run from outside 
 {% endtab %}
 
 {% tab title="Rufus" %}
-1. Download and run [Rufus](https://rufus.ie/).
-2. Select “ISO Image” and then browse for the ISO image.
-3. Select which flash drive you want to put the installer on.
-4. Select the Partition scheme (GPT/MBR) depending on your motherboard’s capabilities.
-5. Click “Start” and wait for it to finish.
-6. Eject the USB flash drive.
+1. Download the [Windows Multi Edition ISO from here](https://www.microsoft.com/en-us/software-download/windows11)
+2. Download and run [Rufus](https://rufus.ie/).
+3. Select “ISO Image” and then browse for the ISO image.
+4. Select which flash drive you want to put the installer on.
+5. Select the Partition scheme (GPT/MBR) depending on your motherboard’s capabilities.
+6. Click “Start” and wait for it to finish.
+7. Eject the USB flash drive.
+{% endtab %}
+
+{% tab title="Ventoy" %}
+
+{% hint style="danger" %}
+**Caution**
+
+It is recommended that you disable Secure Boot before this process, as Ventoy may not be able to boot unsigned ISOs (mostly Linux distros) and you will have to force shutdown.
+
+{% endhint %}
+
+1. Download the [Windows Multi Edition ISO from here](https://www.microsoft.com/en-us/software-download/windows11)
+2. Download the .zip of [Ventoy](https://www.ventoy.net/en/download.html) and extract it
+3. Run the `Ventoy2Disk.exe` program
+3. Select your drive and press `Install`. It should look like this.
+<div align="left"><figure><img src="../.gitbook/assets/ventoy_before_flash.png" alt="" width="337"><figcaption></figcaption></figure></div>
+4. After flash, the right box should have the same numbers as the one in the left.
+<div align="left"><figure><img src="../.gitbook/assets/ventoy_after_flash.png" alt="" width="337"><figcaption></figcaption></figure></div>
+5. Then copy the Windows ISO to the root of VENTOY, not VTOYEFI!
+<div align="left"><figure><img src="../.gitbook/assets/ventoy_drives.png" alt="" width="200"><figcaption></figcaption></figure></div>
+6. Restart your computer and boot into Ventoy. If successful, Windows (and other ISOs you have copied to) should appear here!
+<div align="left"><figure><img src="../.gitbook/assets/ventoy_uefi.png" alt="" width="375"><figcaption></figcaption></figure></div>
+
 {% endtab %}
 {% endtabs %}
 {% endstep %}
@@ -114,7 +139,8 @@ If you do not see an installer like the below screenshot, click next twice, then
 4. Select the largest "primary" partition (should be at least 500GB). Click format. _**Make sure you have the right one selected.**_ At this point click `Next`&#x20;
 
 {% hint style="danger" %}
-**Caution**\
+**Caution**
+\
 Do not delete any partitions, especially the smaller ones. They contain OEM image
 {% endhint %}
 
