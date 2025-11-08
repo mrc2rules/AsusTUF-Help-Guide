@@ -86,7 +86,7 @@ This step will wipe the selected USB Flash drive, so ensure you have nothing imp
 {% hint style="danger" %}
 **Caution**
 
-It is recommended that you disable Secure Boot before this process, as Ventoy may not be able to boot unsigned ISOs (mostly Linux distros) and you will have to force shutdown.
+While Ventoy does support secure boot, there is a chance that it wont work for other ISOs. For this, you will have to refer to their [troubleshooting guide](https://www.ventoy.net/en/doc_secure.html). If you don't want to enroll the MOK keys, simply turn off Secure Boot.
 
 {% endhint %}
 
