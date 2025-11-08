@@ -92,7 +92,7 @@ While Ventoy does support secure boot, there is a chance that it wont work. For 
 5. Then copy the Windows ISO to the root of VENTOY, not VTOYEFI!
 <div align="left"><figure><img src="../.gitbook/assets/ventoy_drives.png" alt="" width="437"><figcaption></figcaption></figure></div>
 6. Restart your computer and boot into Ventoy. If successful, Fedora (and other ISOs you have copied to) should appear here!
-<div align="left"><figure><img src="../.gitbook/assets/ventoy_uefi.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../.gitbook/assets/ventoy_uefi.png" alt="" width="475"><figcaption></figcaption></figure></div>
 
 {% endtab %}
 
