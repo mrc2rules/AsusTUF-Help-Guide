@@ -18,7 +18,7 @@ To know what kind of RAM you need, follow these steps:
 
 <summary><strong>Method 1: Crucial Memory Selector</strong></summary>
 
-Go to [Crucial’s Upgrade Selecor Tool](https://www.crucial.com/upgrades), enter your system details, and it will recommend compatible RAM. It also lists the maximum supported memory for your system.
+Go to [Crucial’s Upgrade Selector Tool](https://www.crucial.com/upgrades), enter your system details, and it will recommend compatible RAM. It also lists the maximum supported memory for your system.
 
 {% hint style="warning" %}
 Make sure the listed details match your system specs, or you might end up with the wrong generation of memory.
