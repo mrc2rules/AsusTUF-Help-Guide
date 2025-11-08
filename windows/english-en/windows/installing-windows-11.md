@@ -75,11 +75,13 @@ This step will wipe the selected USB Flash drive, so ensure you have nothing imp
 {% tab title=" Rufus" %}
 1. Download the [Windows Multi Edition ISO from here](https://www.microsoft.com/en-us/software-download/windows11)
 2. Download and run [Rufus](https://rufus.ie/).
-3. Select “ISO Image” and then browse for the ISO image.
-4. Select which flash drive you want to put the installer on.
+3. If you have multiple drives inserted, select the one you desire.
+3. Select `ISO Image` and then browse for the Windows ISO image. It should then look like this:
+<div align="left"><figure><img src="../.gitbook/assets/rufus_win_main.png" alt="" width="375"><figcaption></figcaption></figure></div>
 5. Select the Partition scheme (GPT/MBR) depending on your motherboard’s capabilities.
-6. Click “Start” and wait for it to finish.
-7. Eject the USB flash drive.
+6. Click `Start`. You will now see a couple of options. If you don't know what they do, leave them as is.
+<div align="left"><figure><img src="../.gitbook/assets/rufus_win_options.png" alt="" width="375"><figcaption></figcaption></figure></div>
+7. Eject the USB flash drive and then restart. You should now be able to boot into your newly flashed drive!
 {% endtab %}
 
 {% tab title=" Ventoy" %}
