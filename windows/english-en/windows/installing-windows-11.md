@@ -76,7 +76,7 @@ This step will wipe the selected USB Flash drive, so ensure you have nothing imp
 1. Download the [Windows Multi Edition ISO from here](https://www.microsoft.com/en-us/software-download/windows11)
 2. Download and run [Rufus](https://rufus.ie/).
 3. If you have multiple drives inserted, select the one you desire.
-3. Select `ISO Image` and then browse for the Windows ISO image. It should then look like this:
+4. Select `ISO Image` and then browse for the Windows ISO image. It should then look like this:
 <div align="left"><figure><img src="../.gitbook/assets/rufus_win_main.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 5. Select the Partition scheme (GPT/MBR) depending on your motherboard’s capabilities.
@@ -98,16 +98,16 @@ While Ventoy does support secure boot, there is a chance that it wont work for o
 1. Download the [Windows Multi Edition ISO from here](https://www.microsoft.com/en-us/software-download/windows11)
 2. Download the .zip of [Ventoy](https://www.ventoy.net/en/download.html) and extract it
 3. Run the `Ventoy2Disk.exe` program
-3. Select your drive and press `Install`. It should look like this.
+4. Select your drive and press `Install`. It should look like this.
 <div align="left"><figure><img src="../.gitbook/assets/ventoy_before_flash.png" alt="" width="337"><figcaption></figcaption></figure></div>
 
-4. After flash, the right box should have the same numbers as the one in the left.
+5. After flash, the right box should have the same numbers as the one in the left.
 <div align="left"><figure><img src="../.gitbook/assets/ventoy_after_flash.png" alt="" width="337"><figcaption></figcaption></figure></div>
 
-5. Then copy the Windows ISO to the root of VENTOY, not VTOYEFI!
+6. Then copy the Windows ISO to the root of VENTOY, not VTOYEFI!
 <div align="left"><figure><img src="../.gitbook/assets/ventoy_drives.png" alt="" width="437"><figcaption></figcaption></figure></div>
 
-6. Restart your computer and boot into Ventoy. If successful, Windows (and other ISOs you have copied to) should appear here!
+7. Restart your computer and boot into Ventoy. If successful, Windows (and other ISOs you have copied to) should appear here!
 <div align="left"><figure><img src="../.gitbook/assets/ventoy_uefi.png" alt="" width="475"><figcaption></figcaption></figure></div>
 
 {% endtab %}
