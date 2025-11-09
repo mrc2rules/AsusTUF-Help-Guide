@@ -6,24 +6,31 @@ coverY: 0
 
 # Debloating Windows
 
+{% hint style="warning" %}
+**Warning:**
+
+Debloating and applying certain tweaks to Windows may break the installation, requiring a full clean install. Proceed at your own risk.
+{% endhint %}
+
 ## What is bloatware?
 
-Bloatware refers to pre-installed or unnecessary software that offers little value and often slows down your system.&#x20;
+Bloatware is preinstalled software that consumes system resources or storage without providing meaningful value to the user. It can slow down your device, change settings automatically, display unwanted ads, and even create security vulnerabilities.
 
-Manufacturers include these apps to promote their services or generate revenue, but they usually consume memory, storage, and battery life.
+Manufacturers often include these apps to promote their services or generate revenue, but they typically drain memory, storage, and battery life while cluttering the system.
 
 ## Why Remove Bloatware?
 
-1. Improves performance by reducing background processes.
-2. Frees up storage.
-3. Extends battery life.
-4. Reduces security risks from outdated or unused apps.
+Removing bloatware can:
+1. Improve performance by reducing background processes.
+2. Free up storage space.
+3. Extend battery life.
+4. Reduce security risks from outdated or unused apps.
 
 ## Steps
 
 {% stepper %}
 {% step %}
-### Clean Install (Alternative Option)
+#### Clean Install (Alternative Option)
 
 If possible, perform a clean installation of Windows. It’s the most effective way to remove pre-installed junk. It resets your system and wipes out all manufacturer bloat.
 
@@ -31,12 +38,11 @@ If possible, perform a clean installation of Windows. It’s the most effective 
 {% endstep %}
 
 {% step %}
-### Remove pre-installed applications
+#### Remove pre-installed applications
 
-This guide will be using the Windows debloat script by [Win11Debloat by Raphire](https://github.com/Raphire/Win11Debloat).
+This guide utilizes the [Win11Debloat](https://github.com/Raphire/Win11Debloat) PowerShell script created by Raphire.
 
-It can remove pre-installed bloatware apps, disable telemetry, remove intrusive interface elements and much more. To see a list of what's removed by default, [click here](https://github.com/Raphire/Win11Debloat#default-settings).\
-
+It can remove pre-installed bloatware apps, disable telemetry, remove intrusive interface elements and much more. To see a list of what's removed by default, [click here](https://github.com/Raphire/Win11Debloat#default-settings).\\
 
 1. Open PowerShell as Administrator.
 2.  Paste and run the following command:
@@ -62,12 +68,15 @@ Once it finishes:
 {% endstep %}
 
 {% step %}
-### Uninstall 3rd-party antivirus software
+#### Uninstall 3rd-party antivirus software
+<details>
+<summary><b>Don't I need an antivirus?</b></summary>
 
-_**But wait, don’t I need an antivirus?**_\
-No, not anymore. \
-In 2025, you don’t need 3rd-party antivirus software, especially not McAfee or Norton. They slow down systems, sell user data, and provide subpar protection.\
-\
+No, not anymore.  
+In 2025, you don’t need third-party antivirus software, especially not McAfee or Norton. They can slow down your system, sell user data, and provide subpar protection.
+
+</details>
+
 **Windows Security (Windows Defender)** comes pre-installed with Windows. It's lightweight, effective, and more than enough for most users. As long as you avoid sketchy downloads and use common sense online, you're covered.
 
 To remove them, use these official removal tools:
@@ -77,12 +86,13 @@ To remove them, use these official removal tools:
 {% endstep %}
 
 {% step %}
-### Disabling Unnecessary Services (Advanced Tweaks)
+
+#### Disabling Unnecessary Services (Advanced Tweaks)
 
 We’ll use the **CTT Tool** ([Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)), which provides a clean GUI for installing apps, disabling services, and applying tweaks.
 
 {% hint style="warning" %}
-**Warning:**&#x20;
+**Warning:**
 
 To avoid interference, the CTT tool temporarily disables Defender after all the tweaks have been successfully applied.\
 **Make sure to turn Defender back on manually** by going to:\
@@ -97,7 +107,7 @@ To avoid interference, the CTT tool temporarily disables Defender after all the 
     ```powershell
     iwr -useb https://christitus.com/win | iex
     ```
-3. Wait for it to download and launch the tool.&#x20;
+3. Wait for it to download and launch the tool.
 4. **Open Tweaks Tab**: Navigate to the ‘Tweaks’ tab in the application.
 
 <figure><img src="https://github.com/user-attachments/assets/43f3c35b-eff6-4d5b-a036-095601622aca" alt=""><figcaption></figcaption></figure>

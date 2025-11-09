@@ -44,13 +44,13 @@ There are safety mechanisms in place, and it will automatically throttle if it r
 {% step %}
 ### Elevate the back of your laptop
 
-Use a laptop stand/book or even your charging brick to keep the laptop slightly elevated from the back. For even better cooling, try using a cooling pad
+Use a laptop stand/book or even your charging brick to keep the laptop slightly elevated from the back. For better cooling, try to [#use-a-cooling-pad](thermal-management.md#use-a-cooling-pad "mention").
 
-This is to ensure proper ventilation and for proper cooling. Try not to block any vents
+Additionally, try not to block any vents
 {% endstep %}
 
 {% step %}
-### Don't use it on cloth surfaces
+### Don't use it on fabric
 
 The cloth/soft surface may clog up the vents and "choke" the laptop ventilation. Use it on hard surfaces like wood or plastic.
 {% endstep %}
@@ -76,21 +76,47 @@ It's also recommended to change the thermal paste **after 2-3 years of use.**&#x
 {% step %}
 ### Use a cooling pad
 
+Cooling pads are specifically engineered to improve airflow into your laptop’s intake vents, significantly reducing internal temperatures and enhancing overall performance.
+
+When buying one, make sure:
+
+* **They have insulating foam around all 4 sides** (prevents air leakage)
+* **They align well with your laptop's vent layout**&#x20;
+
+{% hint style="info" %}
+**Note:**
+
+Keep in mind most low-cost or generic coolers simply blow air instead of properly funneling it into the laptop. Most don't even have a foam seal, so they're pretty worthless.
+{% endhint %}
+
+{% hint style="info" %}
+If you have a larger 16'' or 17'' device, make sure the cooler you buy is appropriately sized
+{% endhint %}
+
 Some recommendations:&#x20;
 
-1. IETS GT500
-2. LLANO v10/v12
+1. LLANO v10/v12
+2. IETS GT500
+3. Flydigi
+4. KLIM Everest&#x20;
 {% endstep %}
 
 {% step %}
 ### Disable CPU Boost
 
-This helps lower temps BY A LOT. There are two ways to do this. Easiest way is via GHelper.
+This helps lower temps significantly. There are two ways to do this. Easiest way is via GHelper.
 
 {% hint style="info" %}
-Do not disable if you rely on intensive CPU bound applications. Test and see if you have a significant hit or if it's worth the drop.
+**Note:**
 
-Usually games get very little FPS benefit for a massive thermal increase. (eg: 1/2FPS for 20C inc)
+Do not disable if:
+
+* You play competitive multiplayer games (Valorant/CS)
+* Rely on intensive CPU bound applications (Video Editing/Coding/Rendering)
+
+Test and see if you have a significant hit or if it's worth the drop.
+
+Most singleplayer games get very little FPS benefit for a massive thermal increase. (eg: 1/2FPS for a 20C inc.)  Disabling CPU boost improves thermals with **no observable performance loss.**&#x20;
 {% endhint %}
 
 {% tabs %}
@@ -125,7 +151,7 @@ Undervolting your CPU/GPU reduces power consumption and heat output without sacr
 
 By lowering voltage while maintaining stability, your system runs more efficiently, leading to extended battery life & lower temperatures.
 
-[Click here for a guide to undervolt you **GPU**](gpu-performance-optimization.md)
+[Click here for a guide to undervolt you **GPU**](performance-optimization/undervolting-gpu.md)
 
 {% hint style="warning" %}
 Check if your CPU supports undervolting, not all models are supported

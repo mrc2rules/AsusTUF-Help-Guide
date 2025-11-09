@@ -78,9 +78,14 @@ Additionally, stop all Asus services via GHelper (Extra > Other > Stop)
 This helps battery life as it doesn't boost anymore and less power is drawn. There are two ways to do this. Easiest way is via GHelper.
 
 {% hint style="info" %}
-Do not disable if you rely on intensive CPU bound applications. Try testing and see if you have a significant performance hit and if it's worth the drop.
+Do not disable if&#x20;
 
-Most games get very little FPS benefit for a massive thermal increase. (eg: 1/2FPS for 20C inc)
+* You play competitive multiplayer games (Valorant/CS)
+* Rely on intensive CPU bound applications (Video Editing/Coding/Rendering)
+
+Test and see if you have a significant hit or if it's worth the drop.
+
+Most singleplayer games get very little FPS benefit for a massive thermal increase. (eg: 1/2FPS for 20C inc)
 {% endhint %}
 
 {% tabs %}
@@ -125,6 +130,51 @@ Check if your CPU supports undervolting, not all models are supported
 BSODs or crashes are normal. Don't worry. If you need additional help or can't figure it out, post on the subreddit or ask in our discord below.
 
 [https://discord.com/invite/g6exUXvWge](https://discord.com/invite/g6exUXvWge)
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Automatically close apps on battery (Advanced)
+
+When you switch to battery, some power hungry apps such as Discord and Nvidia Broadcast may remain open in the background, consuming battery.
+
+This section of the guide shows you how you can automatically exit such apps.\
+
+
+1. Download the `files.zip` from releases. ([Click here](https://github.com/mrc2rules/CloseAppsOnBattery/releases/tag/v1.0))
+2. **Extract the ZIP archive** to any folder
+3. Open search and type `Task Scheduler`
+4.  On the right-hand panel, click **`Import Task…`** \
+    Then select `CloseAppsOnBattery.xml` from the folder you extracted.
+
+    <div align="left"><figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure></div>
+
+
+5.  In the imported task, go to the **`Actions`** tab → Select the listed action → Click **`Edit`**
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+
+6.  Then, \
+    In **`Start in`  -** Paste the directory where you extracted the zip files.
+
+    <div align="left"><figure><img src="../.gitbook/assets/image (2).png" alt="" width="284"><figcaption></figcaption></figure></div>
+
+
+
+{% hint style="success" %}
+**That's it!**
+
+Currently, the script only closes: \
+Discord, Steam, EpicGamesLauncher, NvidiaBroadcast\
+\
+More will be added soon.
+{% endhint %}
+
+{% hint style="info" %}
+If you wish to add apps yourself, open `CloseAppsOnBattery.bat` with Notepad and then add this line under the existing taskkill entries.
+
+`taskkill /IM NAMEOFPROGRAM.exe /F`
 {% endhint %}
 {% endstep %}
 {% endstepper %}

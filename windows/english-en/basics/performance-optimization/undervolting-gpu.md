@@ -1,10 +1,10 @@
 ---
 icon: microchip
-cover: ../.gitbook/assets/6.png
+cover: ../../.gitbook/assets/5 (1).png
 coverY: 0
 ---
 
-# GPU Performance Optimization
+# Undervolting GPU
 
 ## Introduction
 
@@ -69,7 +69,7 @@ This way you can achieve better thermals and power consumption while maintaining
 
 ## <mark style="color:blue;">Undervolting ⚡</mark>
 
-* **Before proceeding, ensure you have installed everything from** [#prerequisites](gpu-performance-optimization.md#prerequisites "mention")
+* **Before proceeding, ensure you have installed everything from** [#prerequisites](undervolting-gpu.md#prerequisites "mention")
 * For demonstration purposes, we are going to be using an example 4060M GPU. Your GPU settings and UV **WILL VARY.**
 * You can click the images to get a zoomed view
 
@@ -83,7 +83,7 @@ Then, open GPU-Z and head to the `Sensors` tab. \
 Note your `GPU Clock` and`GPU Voltage` values (should be ≥ \~0.975v).\
 \
 Keep note of the `GPU Temperature`\
-&#x20;<img src="../.gitbook/assets/image.png" alt="" data-size="original">
+&#x20;<img src="../../.gitbook/assets/image (3).png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
@@ -93,38 +93,38 @@ The vertical line to your left is your **clock speed.**\
 \
 It should look like this:
 
-<div align="left"><figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 Remembering your max `GPU Voltage`, click the dot directly above it. \
 These are your stock values. (_In my case_, 1.01v & \~2500Mhz as highlighted in white)&#x20;
 
-<div align="left"><figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 Next, go down by 25mv and click that point. (_In my case,_ that would be 0.975v )
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 Then, **hold shift + drag the point** **upwards** till the highlighted `GPU Clock` value on the left reaches your stock clocks from before. (_In my case,_ I dragged it from 2400MHz to 2500Mhz)
 
-<figure><img src="../.gitbook/assets/ezgif.com-animated-gif-maker (3).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ezgif.com-animated-gif-maker (3).gif" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 Next, again, **hold shift, select the entire region to the right of your value** _(0.975v in my case)_ **and drag it fully down.**\
 
 
-<figure><img src="../.gitbook/assets/ezgif-65d5d33c42a313.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ezgif-65d5d33c42a313.gif" alt=""><figcaption></figcaption></figure>
 
 It should look like this:\
 
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

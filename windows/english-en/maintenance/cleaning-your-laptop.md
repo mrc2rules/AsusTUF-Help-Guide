@@ -3,21 +3,6 @@ description: This article describes how to clean your laptop.
 icon: broom-wide
 cover: ../.gitbook/assets/8.png
 coverY: 0
-layout:
-  width: default
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: false
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Cleaning Your Laptop
