@@ -35,4 +35,4 @@
 ## Miscellaneous
 
 * [Managing paging memory](miscellaneous/managing-paging-memory.md)
-* [Laptop-Upgrades](miscellaneous/Laptop-Upgrades.md)
+* [Laptop Upgrades](miscellaneous/Laptop-Upgrades.md)
